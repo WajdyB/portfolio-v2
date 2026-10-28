@@ -1,6 +1,4 @@
-# Bouon Wajdy — Personal Portfolio
-
-Official personal project portfolio: **https://bouon-wajdy.vercel.app/**
+# Bouon Wajdy — Personal Portfolio v2
 
 Software Engineer building modern web applications and AI-driven solutions & working on Murex Platform at the intersection of technology and finance.
 
