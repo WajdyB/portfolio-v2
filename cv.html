@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="author" content="Bouon Wajdy — بوعون وجدي">
+  <meta name="description"
+    content="Curriculum vitae of Bouon Wajdy, Software Engineer in Sousse, Tunisia. Experience, selected projects, education, technical skills, and contact details.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Bouon Wajdy | Software Engineer — CV">
+  <meta property="og:description"
+    content="Experience, selected projects, education, and technical skills of Bouon Wajdy.">
+  <meta property="og:url" content="https://bouon-wajdy.vercel.app/cv.html">
+  <meta property="og:image" content="https://bouon-wajdy.vercel.app/images/profile.jpg">
+  <link rel="canonical" href="https://bouon-wajdy.vercel.app/cv.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Bouon Wajdy | Software Engineer — CV</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --surface2: #f5f8fa;
+      --ink: #14283b;
+      --muted: #607387;
+      --line: #d9e2e9;
+      --teal: #167f78;
+      --sky: #3478ad;
+      --gold: #91651f;
+      --max: 1100px
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 15px/1.75 Inter, Arial, sans-serif;
+      overflow-x: hidden
+    }
+
+    html[lang="ar"] body {
+      font-family: Cairo, Tahoma, sans-serif
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse at 82% 10%, rgba(217, 181, 116, .06), transparent 44%),
+        radial-gradient(ellipse at 12% 18%, rgba(86, 203, 185, .05), transparent 44%)
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 4px
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin-inline: auto
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .bar {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800
+    }
+
+    .brand img {
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(217, 181, 116, .55);
+      border-radius: 50%;
+      object-fit: cover
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 18px
+    }
+
+    .home-link {
+      color: #42586c;
+      font-size: 13px;
+      font-weight: 700
+    }
+
+    .home-link:hover {
+      color: var(--gold)
+    }
+
+    .lang {
+      border: 1px solid #d5c39e;
+      background: #fbf8f1;
+      color: var(--ink);
+      padding: 7px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 800
+    }
+
+    .lang:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #ffffff
+    }
+
+    main {
+      padding-block: 34px 70px
+    }
+
+    .resume {
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+      overflow: hidden;
+      border: 1px solid #d9e2e9;
+      border-radius: 22px;
+      background: #ffffff;
+      box-shadow: 0 20px 55px rgba(20, 40, 59, .1)
+    }
+
+    .sidebar {
+      padding: 32px 26px;
+      background: linear-gradient(180deg, #f3f7f9, #eaf1f5);
+      border-inline-end: 1px solid var(--line)
+    }
+
+    .portrait {
+      display: block;
+      width: 112px;
+      height: 112px;
+      margin-bottom: 20px;
+      border: 2px solid rgba(145, 101, 31, .55);
+      border-radius: 50%;
+      object-fit: cover
+    }
+
+    .sidebar h1 {
+      margin: 0;
+      font-size: 25px;
+      line-height: 1.25;
+      letter-spacing: -.03em
+    }
+
+    html[lang="ar"] .sidebar h1 {
+      letter-spacing: 0
+    }
+
+    .role {
+      margin: 8px 0 24px;
+      color: #176f69;
+      font-size: 14px;
+      font-weight: 700
+    }
+
+    .download-cv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      width: 100%;
+      margin: 0 0 20px;
+      padding: 11px 14px;
+      border-radius: 9px;
+      background: #167f78;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      transition: background .2s, transform .2s
+    }
+
+    .download-cv:hover {
+      background: #116c66;
+      transform: translateY(-1px)
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 13px;
+      margin: 0;
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      list-style: none
+    }
+
+    .contact-list li,
+    .contact-list a {
+      overflow-wrap: anywhere;
+      color: #344b60;
+      font-size: 12.5px
+    }
+
+    .contact-list a:hover {
+      color: var(--teal)
+    }
+
+    .contact-label {
+      display: block;
+      color: #667b8d;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    .sidebar-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px
+    }
+
+    .sidebar-links a {
+      padding: 6px 9px;
+      border: 1px solid #c8d6df;
+      border-radius: 8px;
+      color: #344b60;
+      font-size: 11px;
+      font-weight: 700
+    }
+
+    .sidebar-links a:hover {
+      border-color: var(--teal);
+      color: var(--teal)
+    }
+
+    .content {
+      min-width: 0;
+      padding: 34px 38px
+    }
+
+    .cv-banner {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 28px;
+      border: 1px solid #d9e2e9;
+      border-radius: 12px;
+      box-shadow: 0 8px 22px rgba(20, 40, 59, .08)
+    }
+
+    .section {
+      margin-bottom: 34px;
+      scroll-margin-top: 92px
+    }
+
+    .section:last-child {
+      margin-bottom: 0
+    }
+
+    .section h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 16px;
+      color: #17364f;
+      font-size: 18px
+    }
+
+    .section h2::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: var(--line)
+    }
+
+    .summary {
+      margin: 0;
+      color: #42576a;
+      font-size: 14px
+    }
+
+    .timeline {
+      display: grid;
+      gap: 13px
+    }
+
+    .entry {
+      position: relative;
+      padding: 16px 18px;
+      border: 1px solid #dce5eb;
+      border-inline-start: 3px solid var(--teal);
+      border-radius: 12px;
+      background: #f8fafb
+    }
+
+    .entry-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap
+    }
+
+    .entry h3 {
+      margin: 0;
+      color: #17364f;
+      font-size: 14px
+    }
+
+    .date {
+      color: var(--gold);
+      font-size: 11.5px;
+      font-weight: 700
+    }
+
+    .entry p {
+      margin: 7px 0 0;
+      color: #506477;
+      font-size: 13px
+    }
+
+    .entry .company {
+      color: var(--teal);
+      font-weight: 700
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px
+    }
+
+    .project {
+      overflow: hidden;
+      border: 1px solid #dce5eb;
+      border-radius: 12px;
+      background: #f8fafb
+    }
+
+    .project img {
+      display: block;
+      width: 100%;
+      height: 150px;
+      padding: 8px;
+      background: #eef3f6;
+      object-fit: contain;
+      border-bottom: 1px solid #dce5eb
+    }
+
+    .project-info {
+      padding: 12px 14px 14px
+    }
+
+    .project-info h3 {
+      margin: 0;
+      font-size: 14px
+    }
+
+    .project-info .date {
+      display: block;
+      margin-top: 3px
+    }
+
+    .project-info p {
+      margin: 8px 0 0;
+      color: #506477;
+      font-size: 12px;
+      line-height: 1.65
+    }
+
+    .education {
+      display: grid;
+      gap: 12px
+    }
+
+    .degree {
+      padding: 14px 16px;
+      border: 1px solid #dce5eb;
+      border-radius: 12px;
+      background: #f8fafb
+    }
+
+    .degree h3 {
+      margin: 0;
+      font-size: 14px
+    }
+
+    .degree p {
+      margin: 5px 0 0;
+      color: #506477;
+      font-size: 12.5px
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px
+    }
+
+    .skill {
+      padding: 12px 14px;
+      border: 1px solid #dce5eb;
+      border-radius: 10px;
+      background: #f8fafb
+    }
+
+    .skill strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--teal);
+      font-size: 11px
+    }
+
+    .skill span {
+      color: #42576a;
+      font-size: 12px
+    }
+
+    .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px
+    }
+
+    .language {
+      padding: 8px 12px;
+      border: 1px solid #d5e0e7;
+      border-radius: 9px;
+      color: #42576a;
+      font-size: 12px
+    }
+
+    .language strong {
+      color: var(--ink)
+    }
+
+    footer {
+      padding: 20px;
+      color: #687d90;
+      text-align: center;
+      font-size: 11px
+    }
+
+    @media(max-width: 850px) {
+      .resume {
+        grid-template-columns: 1fr
+      }
+
+      .sidebar {
+        border-inline-end: 0;
+        border-bottom: 1px solid var(--line)
+      }
+
+      .sidebar-top {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        align-items: center;
+        column-gap: 18px
+      }
+
+      .portrait {
+        grid-row: span 2;
+        width: 90px;
+        height: 90px;
+        margin: 0
+      }
+
+      .role {
+        margin: 5px 0 0
+      }
+    }
+
+    @media(max-width: 600px) {
+      .wrap {
+        width: min(var(--max), calc(100% - 24px))
+      }
+
+      .bar {
+        min-height: 60px
+      }
+
+      .brand {
+        gap: 8px;
+        font-size: 12px
+      }
+
+      .brand img {
+        width: 34px;
+        height: 34px
+      }
+
+      .nav-actions {
+        gap: 10px
+      }
+
+      .home-link {
+        font-size: 11px
+      }
+
+      .lang {
+        padding: 6px 9px;
+        font-size: 11px
+      }
+
+      main {
+        padding-block: 16px 40px
+      }
+
+      .sidebar {
+        padding: 23px 20px
+      }
+
+      .content {
+        padding: 24px 18px
+      }
+
+      .projects,
+      .skills {
+        grid-template-columns: 1fr
+      }
+
+      .entry-head {
+        display: block
+      }
+
+      .date {
+        display: block;
+        margin-top: 3px
+      }
+    }
+
+    @media(prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bouon Wajdy",
+    "alternateName": "بوعون وجدي",
+    "url": "https://bouon-wajdy.vercel.app/",
+    "image": "https://bouon-wajdy.vercel.app/images/profile.jpg",
+    "jobTitle": "Software Engineer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sousse",
+      "addressCountry": "TN"
+    },
+    "email": "mailto:bouonwajdy@gmail.com",
+    "sameAs": [
+      "https://github.com/WajdyB",
+      "https://www.linkedin.com/in/bouon-wajdy-216882257/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="bar wrap">
+      <a class="brand" href="index.html">
+        <img src="images/profile.jpg" alt="">
+        <span data-en="Bouon Wajdy · Curriculum Vitae" data-ar="بوعون وجدي · السيرة الذاتية">Bouon Wajdy · Curriculum Vitae</span>
+      </a>
+      <div class="nav-actions">
+        <a class="home-link" href="index.html" data-en="← Portfolio" data-ar="← الموقع الشخصي">← Portfolio</a>
+        <button id="lang-toggle" class="lang" type="button" aria-label="Switch to Arabic">العربية</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="resume">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <img class="portrait" src="images/profile.jpg" alt="Bouon Wajdy — بوعون وجدي">
+          <h1 data-en="BOUON WAJDY" data-ar="بوعون وجدي">BOUON WAJDY</h1>
+          <p class="role" data-en="Software Engineer" data-ar="مهندس برمجيات">Software Engineer</p>
+        </div>
+        <a class="download-cv" href="assets/cv.pdf" download="Bouon-Wajdy-CV.pdf"
+          data-en="Download CV (PDF) ↓" data-ar="تحميل السيرة الذاتية (PDF) ↓">Download CV (PDF) ↓</a>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label" data-en="Location" data-ar="الموقع">Location</span>
+            <span data-en="Sousse, Tunisia" data-ar="سوسة، تونس">Sousse, Tunisia</span>
+          </li>
+          <li>
+            <span class="contact-label" data-en="Phone" data-ar="الهاتف">Phone</span>
+            <a href="tel:+21625516320">+216 25 516 320</a>
+          </li>
+          <li>
+            <span class="contact-label" data-en="Email" data-ar="البريد الإلكتروني">Email</span>
+            <a href="mailto:bouonwajdy@gmail.com">bouonwajdy@gmail.com</a>
+          </li>
+        </ul>
+        <div class="sidebar-links">
+          <a href="https://github.com/WajdyB" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/bouon-wajdy-216882257/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </aside>
+
+      <div class="content">
+        <img class="cv-banner" src="assets/wajdy-banner.png" alt="Bouon Wajdy — Software Engineer">
+        <section class="section" id="professional-summary">
+          <h2 data-en="Professional Summary" data-ar="نبذة مهنية">Professional Summary</h2>
+          <p class="summary"
+            data-en="I am a Software Engineer and a graduate of EPI Digital School in Sousse, with a strong passion for designing and developing practical, efficient, and scalable software solutions. I am currently seeking a full-time opportunity in software development where I can apply my technical skills, contribute to impactful projects, and continue growing as a software engineer. Curious by nature and committed to continuous learning, I value teamwork, adaptability, and delivering high-quality solutions that create real value."
+            data-ar="أنا مهندس برمجيات وخريج مدرسة EPI الرقمية في سوسة، ولدي شغف كبير بتصميم حلول برمجية عملية وفعالة وقابلة للتوسع وتطويرها. أبحث حالياً عن فرصة عمل بدوام كامل في تطوير البرمجيات لتطبيق مهاراتي التقنية والمساهمة في مشاريع مؤثرة ومواصلة التطور كمهندس برمجيات. أقدّر العمل الجماعي والقدرة على التكيف والتعلم المستمر وتقديم حلول عالية الجودة تحقق قيمة حقيقية.">
+            I am a Software Engineer and a graduate of EPI Digital School in Sousse, with a strong passion for
+            designing and developing practical, efficient, and scalable software solutions. I am currently seeking a
+            full-time opportunity in software development where I can apply my technical skills, contribute to impactful
+            projects, and continue growing as a software engineer. Curious by nature and committed to continuous
+            learning, I value teamwork, adaptability, and delivering high-quality solutions that create real value.
+          </p>
+        </section>
+
+        <section class="section" id="professional-experience">
+          <h2 data-en="Professional Experience" data-ar="الخبرة المهنية">Professional Experience</h2>
+          <div class="timeline">
+            <article class="entry">
+              <div class="entry-head">
+                <h3 data-en="Junior Murex Consultant" data-ar="مستشار Murex مبتدئ">Junior Murex Consultant</h3>
+                <span class="date" data-en="October 2026 – Present" data-ar="أكتوبر ٢٠٢٦ – حتى الآن">October 2026 – Present</span>
+              </div>
+              <p class="company">KARTESY Consulting</p>
+            </article>
+            <article class="entry">
+              <div class="entry-head">
+                <h3 data-en="End-of-Studies Internship" data-ar="تدريب مشروع التخرج">End-of-Studies Internship</h3>
+                <span class="date" data-en="January 2026 – July 2026" data-ar="يناير ٢٠٢٦ – يوليو ٢٠٢٦">January 2026 – July 2026</span>
+              </div>
+              <p class="company">MAFRAH IT</p>
+              <p data-en="Designed and developed an intelligent human resource management platform."
+                data-ar="تصميم وتطوير منصة ذكية لإدارة الموارد البشرية.">Designed and developed an intelligent human resource management platform.</p>
+            </article>
+            <article class="entry">
+              <div class="entry-head">
+                <h3 data-en="Summer Internship" data-ar="تدريب صيفي">Summer Internship</h3>
+                <span class="date" data-en="June 2025 – August 2025" data-ar="يونيو ٢٠٢٥ – أغسطس ٢٠٢٥">June 2025 – August 2025</span>
+              </div>
+              <p class="company">Mobelite Labs Tunisie</p>
+              <p data-en="Designed and developed a CMS solution for creating static websites."
+                data-ar="تصميم وتطوير نظام إدارة محتوى لإنشاء مواقع ويب ثابتة.">Designed and developed a CMS solution for creating static websites.</p>
+            </article>
+            <article class="entry">
+              <div class="entry-head">
+                <h3 data-en="End-of-Studies Internship" data-ar="تدريب مشروع التخرج">End-of-Studies Internship</h3>
+                <span class="date" data-en="January 2023 – July 2023" data-ar="يناير ٢٠٢٣ – يوليو ٢٠٢٣">January 2023 – July 2023</span>
+              </div>
+              <p class="company">Mobelite Labs Tunisie</p>
+              <p data-en="Developed a web and mobile application for exchanging toys online."
+                data-ar="تطوير تطبيق ويب وهاتف محمول لتبادل الألعاب عبر الإنترنت.">Developed a web and mobile application for exchanging toys online.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="digital-projects">
+          <h2 data-en="Selected Projects" data-ar="أبرز المشاريع">Selected Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <img src="images/projects/kiddostradez.png" alt="Kiddos Tradez project screenshot" loading="lazy">
+              <div class="project-info">
+                <h3>Kiddos Tradez</h3>
+                <span class="date" data-en="January 2023 – June 2023" data-ar="يناير ٢٠٢٣ – يونيو ٢٠٢٣">January 2023 – June 2023</span>
+                <p data-en="A web and mobile application for exchanging toys online, developed with React.js, React Native, and Spring Boot to help parents exchange and sell unused toys."
+                  data-ar="تطبيق ويب وهاتف محمول لتبادل الألعاب عبر الإنترنت، باستخدام React.js وReact Native وSpring Boot، لمساعدة الوالدين على تبادل الألعاب غير المستخدمة وبيعها.">A web and mobile application for exchanging toys online, developed with React.js, React Native, and Spring Boot to help parents exchange and sell unused toys.</p>
+              </div>
+            </article>
+            <article class="project">
+              <img src="images/projects/jobPortal.png" alt="JobPortal project screenshot" loading="lazy">
+              <div class="project-info">
+                <h3>JobPortal</h3>
+                <span class="date" data-en="October 2024 – December 2024" data-ar="أكتوبر ٢٠٢٤ – ديسمبر ٢٠٢٤">October 2024 – December 2024</span>
+                <p data-en="A job application web app built with the MERN stack (React.js and Express.js), enabling companies to post vacancies and receive applications from candidates."
+                  data-ar="تطبيق ويب للتوظيف باستخدام MERN (React.js وExpress.js)، يتيح للشركات نشر الوظائف واستقبال طلبات المرشحين.">A job application web app built with the MERN stack (React.js and Express.js), enabling companies to post vacancies and receive applications from candidates.</p>
+              </div>
+            </article>
+            <article class="project">
+              <img src="images/projects/invoicepro.png" alt="InvoicePRO project screenshot" loading="lazy">
+              <div class="project-info">
+                <h3>InvoicePRO</h3>
+                <span class="date" data-en="February 2025 – June 2025" data-ar="فبراير ٢٠٢٥ – يونيو ٢٠٢٥">February 2025 – June 2025</span>
+                <p data-en="A Next.js web application that helps small businesses manage invoices and quotations."
+                  data-ar="تطبيق ويب باستخدام Next.js يساعد الشركات الصغيرة على إدارة الفواتير وعروض الأسعار.">A Next.js web application that helps small businesses manage invoices and quotations.</p>
+              </div>
+            </article>
+            <article class="project">
+              <img src="images/projects/rhpro.png" alt="RHPro project screenshot" loading="lazy">
+              <div class="project-info">
+                <h3>RHPro</h3>
+                <span class="date" data-en="January 2026 – July 2026" data-ar="يناير ٢٠٢٦ – يوليو ٢٠٢٦">January 2026 – July 2026</span>
+                <p data-en="An intelligent human resource management platform for tracking working hours, leave requests, and employee performance through a centralized space with AI features."
+                  data-ar="منصة ذكية لإدارة الموارد البشرية لمتابعة ساعات العمل وطلبات الإجازات وأداء الموظفين ضمن مساحة مركزية مزودة بميزات الذكاء الاصطناعي.">An intelligent human resource management platform for tracking working hours, leave requests, and employee performance through a centralized space with AI features.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="education">
+          <h2 data-en="Education" data-ar="التعليم">Education</h2>
+          <div class="education">
+            <article class="degree">
+              <div class="entry-head">
+                <h3 data-en="Engineering Degree in Software Development" data-ar="شهادة مهندس في تطوير البرمجيات">Engineering Degree in Software Development</h3>
+                <span class="date" data-en="September 2023 – July 2026" data-ar="سبتمبر ٢٠٢٣ – يوليو ٢٠٢٦">September 2023 – July 2026</span>
+              </div>
+              <p data-en="EPI Digital School, Sousse, Tunisia" data-ar="مدرسة EPI الرقمية، سوسة، تونس">EPI Digital School, Sousse, Tunisia</p>
+            </article>
+            <article class="degree">
+              <div class="entry-head">
+                <h3 data-en="Bachelor’s Degree in Computer Science" data-ar="الإجازة في علوم الحاسوب">Bachelor’s Degree in Computer Science</h3>
+                <span class="date" data-en="September 2020 – June 2023" data-ar="سبتمبر ٢٠٢٠ – يونيو ٢٠٢٣">September 2020 – June 2023</span>
+              </div>
+              <p data-en="Higher Institute of Computer Science and Mathematics of Monastir (ISIMM), Monastir, Tunisia"
+                data-ar="المعهد العالي للإعلامية والرياضيات بالمنستير (ISIMM)، المنستير، تونس">Higher Institute of Computer Science and Mathematics of Monastir (ISIMM), Monastir, Tunisia</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <h2 data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</h2>
+          <div class="skills">
+            <div class="skill"><strong data-en="Programming Languages" data-ar="لغات البرمجة">Programming Languages</strong><span>Java, C++, JavaScript, TypeScript, Python, SQL</span></div>
+            <div class="skill"><strong data-en="Frameworks & Libraries" data-ar="الأطر والمكتبات">Frameworks & Libraries</strong><span>Spring Boot, React.js, Next.js, NestJS, Express.js</span></div>
+            <div class="skill"><strong data-en="Databases" data-ar="قواعد البيانات">Databases</strong><span>MySQL, PostgreSQL, MongoDB</span></div>
+            <div class="skill"><strong data-en="Tools & Technologies" data-ar="الأدوات والتقنيات">Tools & Technologies</strong><span>Git, GitHub, VS Code, IntelliJ IDEA, Docker, Vercel, Prisma, Supabase</span></div>
+            <div class="skill"><strong data-en="API & Testing" data-ar="واجهات البرمجة والاختبار">API & Testing</strong><span>REST APIs, Postman, Swagger/OpenAPI</span></div>
+            <div class="skill"><strong data-en="Software Engineering" data-ar="هندسة البرمجيات">Software Engineering</strong><span>UML, MVC, OOP, Git/GitHub, Agile, CI/CD</span></div>
+          </div>
+        </section>
+
+        <section class="section" id="languages">
+          <h2 data-en="Languages" data-ar="اللغات">Languages</h2>
+          <div class="languages">
+            <span class="language"><strong data-en="English" data-ar="الإنجليزية">English</strong> · <span data-en="Level C" data-ar="المستوى C">Level C</span></span>
+            <span class="language"><strong data-en="French" data-ar="الفرنسية">French</strong> · <span data-en="Level C" data-ar="المستوى C">Level C</span></span>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <span data-en="Bouon Wajdy · Curriculum Vitae" data-ar="بوعون وجدي · السيرة الذاتية">Bouon Wajdy · Curriculum Vitae</span>
+  </footer>
+  <script>
+    (function () {
+      var toggle = document.getElementById('lang-toggle');
+      var translatable = document.querySelectorAll('[data-en][data-ar]');
+
+      function setLanguage(language) {
+        var isArabic = language === 'ar';
+        document.documentElement.lang = language;
+        document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
+        translatable.forEach(function (element) {
+          element.textContent = isArabic ? element.dataset.ar : element.dataset.en;
+        });
+        toggle.textContent = isArabic ? 'English' : 'العربية';
+        toggle.setAttribute('aria-label', isArabic ? 'Switch to English' : 'Switch to Arabic');
+        document.title = isArabic ? 'بوعون وجدي | مهندس برمجيات — السيرة الذاتية' : 'Bouon Wajdy | Software Engineer — CV';
+      }
+
+      toggle.addEventListener('click', function () {
+        setLanguage(document.documentElement.lang === 'ar' ? 'en' : 'ar');
+      });
+    }());
+  </script>
+</body>
+
+</html>

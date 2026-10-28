@@ -1,0 +1,2931 @@
+<!doctype html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07101c">
+  <meta name="author" content="Bouon Wajdy — بوعون وجدي">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="geo.region" content="TN-51">
+  <meta name="geo.placename" content="Sousse, Tunisia">
+  <meta name="keywords"
+    content="Bouon Wajdy, بوعون وجدي, Software Engineer, Full-Stack Developer, Junior Murex Consultant, KARTESY, Sousse, Tunisia, Next.js, React, Spring Boot, FinTech, IEEE ISIMM, IEEEXtreme">
+  <meta name="description"
+    content="Official Portfolio of Bouon Wajdy (بوعون وجدي) — Software Engineer, Full-Stack Developer, and Junior Murex Consultant based in Sousse, Tunisia. Graduated with EXCELLENT distinction from EPI Digital School.">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Bouon Wajdy | بوعون وجدي">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_TN">
+  <meta property="og:title" content="Bouon Wajdy | Software Engineer & Junior Murex Consultant">
+  <meta property="og:description"
+    content="Building modern web applications and AI-driven solutions & working on Murex Platform at the intersection of technology and finance.">
+  <meta property="og:url" content="https://bouon-wajdy.vercel.app/">
+  <meta property="og:image" content="https://bouon-wajdy.vercel.app/images/profile.jpg">
+  <meta property="profile:first_name" content="Bouon">
+  <meta property="profile:last_name" content="Wajdy">
+  <meta property="profile:username" content="WajdyB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://bouon-wajdy.vercel.app/images/profile.jpg">
+  <meta name="twitter:title" content="Bouon Wajdy | Software Engineer & Junior Murex Consultant">
+  <meta name="twitter:description"
+    content="Software Engineer building modern web applications and AI-driven solutions & working on Murex Platform at the intersection of technology and finance.">
+  <link rel="canonical" href="https://bouon-wajdy.vercel.app/">
+  <link rel="apple-touch-icon" href="images/profile.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Bouon Wajdy | Software Engineer & Junior Murex Consultant</title>
+  <style>
+    :root {
+      --bg: #07101c;
+      --surface: #0c1929;
+      --surface2: #0f2034;
+      --ink: #f4f7fb;
+      --muted: #9fb0c3;
+      --line: #1f3347;
+      --teal: #56cbb9;
+      --sky: #78bcff;
+      --gold: #d9b574;
+      --max: 1160px
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 95px
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 16px/1.75 Inter, Arial, sans-serif;
+      overflow-x: hidden;
+      position: relative
+    }
+
+    html[lang="ar"] body {
+      font-family: Cairo, Tahoma, sans-serif
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      z-index: 0;
+      pointer-events: none;
+      inset: 0;
+      background: radial-gradient(ellipse at 82% 12%, rgba(217, 181, 116, .07), transparent 48%), radial-gradient(ellipse at 14% 18%, rgba(86, 203, 185, .08), transparent 46%), radial-gradient(ellipse at 50% 92%, rgba(19, 57, 101, .16), transparent 55%)
+    }
+
+    #bg-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      display: block
+    }
+
+    main,
+    footer {
+      position: relative;
+      z-index: 1
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 4px
+    }
+
+    button {
+      font: inherit
+    }
+
+    .skip {
+      position: absolute;
+      inset-inline-start: 20px;
+      top: -80px;
+      padding: 9px 15px;
+      background: #fff;
+      color: #07101c;
+      z-index: 30
+    }
+
+    .skip:focus {
+      top: 10px
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 48px));
+      margin-inline: auto
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(7, 16, 28, .88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255, 255, 255, .09)
+    }
+
+    .bar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .brand .longname {
+      display: block;
+      font-size: clamp(20px, 2.2vw, 25px);
+      line-height: 1.15;
+      color: #ffffff;
+      font-weight: 900;
+      letter-spacing: -.02em
+    }
+
+    html[lang="ar"] .brand .longname {
+      letter-spacing: 0
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      background: #0d1e31;
+      border: 1px solid rgba(217, 181, 116, .55);
+      color: var(--gold);
+      border-radius: 10px;
+      width: 44px;
+      height: 44px;
+      font-weight: 900;
+      font-size: 16px;
+      flex-shrink: 0
+    }
+
+    .brand small {
+      display: block;
+      color: var(--gold);
+      font: 600 11.5px/1.35 Inter, Cairo, sans-serif;
+      letter-spacing: .02em;
+      margin-top: 2px
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #c9d6e4;
+      margin-inline-start: auto
+    }
+
+    .navigation a {
+      padding: 6px 4px;
+      transition: color .2s
+    }
+
+    .navigation a:hover,
+    .tiny-link:hover {
+      color: var(--gold)
+    }
+
+    .navigation a.cv-nav-link {
+      padding: 6px 4px;
+      color: var(--teal);
+      white-space: nowrap
+    }
+
+    .navigation a.cv-nav-link:hover {
+      color: #a9f3e7
+    }
+
+    .lang {
+      order: 3;
+      border: 1px solid rgba(217, 181, 116, .45);
+      background: rgba(15, 31, 49, .85);
+      color: #f4f7fb;
+      padding: 7px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 12.5px;
+      white-space: nowrap;
+      transition: .2s
+    }
+
+    .lang:hover {
+      background: var(--gold);
+      color: #07101c;
+      border-color: var(--gold)
+    }
+
+    /* Executive Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.28fr .72fr;
+      gap: 52px;
+      align-items: center;
+      padding-block: 54px 68px
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: Inter, Cairo, sans-serif;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(217, 181, 116, .35);
+      padding-bottom: 8px;
+      margin-bottom: 18px
+    }
+
+    html[lang="ar"] .hero-kicker {
+      letter-spacing: .03em;
+      font-size: 12.5px
+    }
+
+    .kicker-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      display: inline-block
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0
+    }
+
+    .hero-name {
+      display: block;
+      font-size: clamp(44px, 5.8vw, 70px);
+      font-weight: 900;
+      line-height: 1.18;
+      color: #ffffff;
+      letter-spacing: -.03em;
+      margin: 0 0 10px
+    }
+
+    html[lang="ar"] .hero-name {
+      letter-spacing: 0;
+      line-height: 1.22
+    }
+
+    .hero-name-sub {
+      display: block;
+      font-family: Inter, sans-serif;
+      font-size: clamp(16px, 1.8vw, 21px);
+      font-weight: 700;
+      color: #8fa4bc;
+      letter-spacing: -.01em;
+      margin-bottom: 22px
+    }
+
+    .role-editorial {
+      border-inline-start: 3px solid var(--gold);
+      padding-inline-start: 18px;
+      margin-bottom: 22px
+    }
+
+    .hero-role {
+      margin: 0 0 6px;
+      font-size: clamp(23px, 2.8vw, 35px);
+      line-height: 1.25;
+      font-weight: 800;
+      color: #f4f7fb;
+      letter-spacing: -.02em
+    }
+
+    html[lang="ar"] .hero-role {
+      letter-spacing: 0;
+      line-height: 1.3
+    }
+
+    .hero-role em {
+      font-style: normal;
+      color: var(--teal)
+    }
+
+    .role-tagline {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--gold);
+      margin: 0
+    }
+
+    .lede {
+      font-size: 16px;
+      color: #c3d2e2;
+      line-height: 1.88;
+      max-width: 650px;
+      margin-bottom: 28px
+    }
+
+    .hero-ledger {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+      padding-block: 18px;
+      margin-bottom: 28px;
+      gap: 0
+    }
+
+    .ledger-col {
+      padding-inline: 16px;
+      border-inline-start: 1px solid rgba(255, 255, 255, .1)
+    }
+
+    .ledger-col:first-child {
+      padding-inline-start: 0;
+      border-inline-start: none
+    }
+
+    .ledger-col strong {
+      display: block;
+      font-family: Inter, Cairo, sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 4px
+    }
+
+    .ledger-col strong span {
+      color: var(--gold)
+    }
+
+    .ledger-col small {
+      display: block;
+      font-size: 12px;
+      color: #9fb2c7;
+      line-height: 1.45;
+      font-weight: 600
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 20px;
+      border-radius: 9px;
+      font-weight: 800;
+      font-size: 13.5px;
+      border: 1px solid var(--line);
+      transition: .2s ease
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--gold)
+    }
+
+    .btn.primary {
+      background: var(--gold);
+      color: #07101c;
+      border-color: var(--gold)
+    }
+
+    .btn.primary:hover {
+      background: #e5c589
+    }
+
+    .btn.secondary {
+      background: rgba(255, 255, 255, .04);
+      color: #eff6fc;
+      border-color: rgba(255, 255, 255, .16)
+    }
+
+    /* Bespoke Gallery Portrait Frame / Avatar */
+    .hero-aside {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      perspective: 1200px
+    }
+
+    .portrait-card {
+      position: relative;
+      width: min(100%, 360px);
+      background: linear-gradient(165deg, #0f2034 0%, #081220 100%);
+      border: 1px solid rgba(217, 181, 116, .38);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 28px 75px rgba(0, 0, 0, .65);
+      transform-style: preserve-3d;
+      transition: transform .22s cubic-bezier(.2, .8, .2, 1), border-color .3s
+    }
+
+    .portrait-card:hover {
+      border-color: rgba(217, 181, 116, .7)
+    }
+
+    .portrait-card::before {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: 11px;
+      pointer-events: none;
+      z-index: 2
+    }
+
+    .portrait-photo-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 4.3;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #060d17;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .avatar-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #102a43, #071524);
+      color: var(--gold);
+      font-family: Inter, sans-serif
+    }
+
+    .avatar-initials {
+      font-size: 72px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-shadow: 0 4px 20px rgba(217, 181, 116, .3)
+    }
+
+    .avatar-subtitle {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--teal);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 8px
+    }
+
+    .portrait-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform .5s cubic-bezier(.2, .8, .2, 1)
+    }
+
+    .portrait-card:hover .portrait-img {
+      transform: scale(1.025)
+    }
+
+    .portrait-dossier {
+      padding: 14px 6px 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border-top: 1px solid rgba(255, 255, 255, .09);
+      margin-top: 12px
+    }
+
+    .dossier-loc {
+      font-size: 12px;
+      font-weight: 700;
+      color: #d6e2ee;
+      display: flex;
+      align-items: center;
+      gap: 7px
+    }
+
+    .dossier-loc i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 8px var(--teal);
+      display: inline-block
+    }
+
+    .dossier-code {
+      font-family: Inter, monospace;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: .08em;
+      text-transform: uppercase
+    }
+
+    section {
+      padding-block: 74px
+    }
+
+    .sectionhead {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 25px;
+      margin-bottom: 30px
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--teal);
+      font-weight: 800
+    }
+
+    h2 {
+      font-size: clamp(28px, 3vw, 40px);
+      line-height: 1.3;
+      letter-spacing: -.04em;
+      margin: 8px 0 0
+    }
+
+    html[lang="ar"] h2 {
+      letter-spacing: 0
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 460px;
+      font-size: 14px;
+      margin: 0
+    }
+
+    .specialties {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px
+    }
+
+    .tile {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, #102538d9, #0b1b2ce6);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 25px;
+      transition: transform .28s cubic-bezier(.2, .8, .2, 1), border-color .28s, box-shadow .28s
+    }
+
+    .tile:hover {
+      transform: translateY(-4px);
+      border-color: #65e0cc77;
+      box-shadow: 0 18px 40px #00000055
+    }
+
+    .tile .num {
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: .12em
+    }
+
+    .tile h3 {
+      font-size: 18px;
+      margin: 18px 0 8px
+    }
+
+    .tile p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0
+    }
+
+    .subtle {
+      border-top: 1px solid #2b415588
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0
+    }
+
+    .filter {
+      border: 1px solid var(--line);
+      background: #0c1c2e;
+      color: #bdcbd9;
+      padding: 10px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 12.5px;
+      font-weight: 700;
+      transition: .2s
+    }
+
+    .filter:hover {
+      border-color: #4b7d8c;
+      color: #fff
+    }
+
+    .filter[aria-pressed="true"] {
+      background: linear-gradient(135deg, #1c4e57, #143546);
+      color: #c4fff2;
+      border-color: var(--teal);
+      box-shadow: 0 6px 20px #65e0cc18
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px
+    }
+
+    .project {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      background: linear-gradient(180deg, #0f2236e0 0%, #0a1828eb 100%);
+      backdrop-filter: blur(10px);
+      border: 1px solid #2b445c;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 18px 45px #00000045;
+      transition: transform .28s cubic-bezier(.2, .8, .2, 1), border-color .28s, box-shadow .28s
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+      border-color: var(--teal);
+      box-shadow: 0 26px 60px #00000066, 0 0 0 1px #65e0cc33
+    }
+
+    .project[hidden] {
+      display: none !important
+    }
+
+    .project.featured {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1.22fr .78fr;
+      align-items: stretch
+    }
+
+    .browser-frame {
+      display: flex;
+      flex-direction: column;
+      background: #050c17;
+      border-bottom: 1px solid #ffffff14;
+      overflow: hidden
+    }
+
+    .project.featured .browser-frame {
+      border-bottom: none;
+      border-inline-end: 1px solid #ffffff14;
+      justify-content: space-between
+    }
+
+    .browser-bar {
+      height: 42px;
+      background: linear-gradient(180deg, #152b40, #0f2133);
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid #ffffff12;
+      direction: ltr;
+      flex-shrink: 0
+    }
+
+    .browser-dots {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0
+    }
+
+    .browser-dots i {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block
+    }
+
+    .browser-dots i:nth-child(1) {
+      background: #ff5f56
+    }
+
+    .browser-dots i:nth-child(2) {
+      background: #ffbd2e
+    }
+
+    .browser-dots i:nth-child(3) {
+      background: #27c93f
+    }
+
+    .browser-url {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #081423;
+      border: 1px solid #2b465e;
+      padding: 4px 12px;
+      border-radius: 999px;
+      color: #b8d4e8;
+      font: 600 11.5px/1 Inter, monospace;
+      max-width: 70%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap
+    }
+
+    .browser-url .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #27c93f;
+      box-shadow: 0 0 8px #27c93f;
+      flex-shrink: 0
+    }
+
+    .browser-open {
+      color: #8cbdc8;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0
+    }
+
+    .project-viewport {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      padding: 12px;
+      background: #081626
+    }
+
+    .project.featured .project-viewport {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: auto;
+      min-height: 340px;
+      padding: 18px;
+      background: radial-gradient(circle at 50% 50%, #0d2238 0%, #050b14 100%)
+    }
+
+    .project-icon-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #6790b5;
+      gap: 10px;
+      padding: 30px
+    }
+
+    .project-icon-placeholder svg {
+      width: 54px;
+      height: 54px;
+      opacity: 0.75;
+      stroke: var(--teal)
+    }
+
+    .project-icon-placeholder span {
+      font-size: 13px;
+      font-weight: 700;
+      color: #9ebfd4;
+      letter-spacing: 0.05em
+    }
+
+    .project-shot {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      background: #091827;
+      border-radius: 12px;
+      transition: transform .45s cubic-bezier(.2, .8, .2, 1)
+    }
+
+    .project.featured .project-shot {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+      object-position: center
+    }
+
+    .project:hover .project-shot {
+      transform: scale(1.03)
+    }
+
+    .viewport-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 55%, #06101cd9 100%);
+      opacity: 0;
+      transition: opacity .25s ease;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 16px
+    }
+
+    .project:hover .viewport-overlay {
+      opacity: 1
+    }
+
+    .overlay-pill {
+      background: var(--teal);
+      color: #04222b;
+      font-weight: 800;
+      font-size: 12px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      box-shadow: 0 8px 20px #0008
+    }
+
+    .project-body {
+      padding: 26px 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1
+    }
+
+    .project.featured .project-body {
+      padding: 32px 34px;
+      justify-content: center
+    }
+
+    .project-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px
+    }
+
+    .project-body h3 {
+      font-size: 21px;
+      line-height: 1.35;
+      margin-bottom: 10px;
+      color: #f5f9ff
+    }
+
+    .project.featured .project-body h3 {
+      font-size: 26px
+    }
+
+    .project-body p {
+      font-size: 14.5px;
+      color: #b8c8d8;
+      margin-bottom: 18px;
+      line-height: 1.82
+    }
+
+    .tag {
+      display: inline-block;
+      color: var(--teal);
+      background: #65e0cc14;
+      border: 1px solid #65e0cc38;
+      padding: 4px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: .08em
+    }
+
+    .featured-badge {
+      color: var(--gold);
+      background: #efc47817;
+      border: 1px solid #efc47844;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase
+    }
+
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px
+    }
+
+    .highlights span {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #cfe2f0;
+      background: #132a40;
+      border: 1px solid #294660;
+      padding: 5px 11px;
+      border-radius: 8px
+    }
+
+    .links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: auto
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #ecf8ff;
+      background: #153149;
+      border: 1px solid #315875;
+      padding: 9px 15px;
+      border-radius: 10px;
+      transition: .2s
+    }
+
+    .links a.primary-link {
+      background: var(--teal);
+      color: #04222b;
+      border-color: var(--teal)
+    }
+
+    .links a:hover {
+      border-color: var(--teal);
+      color: var(--teal);
+      transform: translateY(-2px)
+    }
+
+    .links a.primary-link:hover {
+      background: #7cead8;
+      color: #04222b
+    }
+
+    .proof {
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap: 23px
+    }
+
+    .proofbox {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 21px;
+      padding: 28px;
+      background: #0f2436d9;
+      backdrop-filter: blur(10px);
+      transition: border-color .3s, box-shadow .3s
+    }
+
+    .proofbox:hover {
+      border-color: #65e0cc66;
+      box-shadow: 0 18px 45px #00000050
+    }
+
+    .proofbox p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.85
+    }
+
+    .proofbox ul {
+      padding-inline-start: 20px;
+      color: #d0dfeb;
+      font-size: 14px;
+      line-height: 1.95;
+      margin: 0
+    }
+
+    .proofbox li {
+      padding-inline-start: 5px;
+      margin-bottom: 6px
+    }
+
+    .proofbox h3 {
+      margin-bottom: 14px;
+      font-size: 19px
+    }
+
+    .proofbox .note {
+      border-top: 1px solid var(--line);
+      margin-top: 20px;
+      padding-top: 15px;
+      color: #89b5c1;
+      font-size: 12.5px
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+      margin-top: 16px
+    }
+
+    .t-item {
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #0b1a29;
+      border: 1px solid #2b4155;
+      transition: border-color .25s, transform .25s
+    }
+
+    .t-item:hover {
+      border-color: #65e0cc55;
+      transform: translateX(3px)
+    }
+
+    html[dir="rtl"] .t-item:hover {
+      transform: translateX(-3px)
+    }
+
+    .t-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap
+    }
+
+    .t-head strong {
+      color: #f1f6fc;
+      font-size: 14.5px
+    }
+
+    .t-head span {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700
+    }
+
+    .t-org {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 2px
+    }
+
+    .t-desc {
+      color: #afbdcd;
+      font-size: 12.5px;
+      margin-top: 4px;
+      line-height: 1.6
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px
+    }
+
+    /* Tech Stack & FinTech Section */
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-bottom: 24px
+    }
+
+    .tech-card {
+      position: relative;
+      overflow: hidden;
+      background: #0c1c2ed9;
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 12px;
+      cursor: default;
+      transition: transform .25s cubic-bezier(.2, .8, .2, 1), border-color .25s, box-shadow .25s, background .25s
+    }
+
+    .tech-card:hover {
+      transform: translateY(-4px);
+      border-color: #65e0cc88;
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.45);
+      background: #0e2238
+    }
+
+    .tech-icon-wrap {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 9px;
+      transition: transform .25s ease, border-color .25s ease
+    }
+
+    .tech-card:hover .tech-icon-wrap {
+      transform: scale(1.08);
+      border-color: rgba(101, 224, 204, 0.35)
+    }
+
+    .tech-icon-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.4))
+    }
+
+    .tech-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e6edf3;
+      letter-spacing: .2px
+    }
+
+    /* FinTech Learning Phase Card */
+    .fintech-card {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(12, 28, 46, 0.95), rgba(15, 36, 58, 0.88));
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(217, 181, 116, 0.35);
+      border-radius: 22px;
+      padding: 32px 34px;
+      margin-top: 10px;
+      transition: transform .25s cubic-bezier(.2, .8, .2, 1), border-color .25s, box-shadow .25s
+    }
+
+    .fintech-card:hover {
+      border-color: rgba(217, 181, 116, 0.65);
+      box-shadow: 0 20px 45px rgba(217, 181, 116, 0.1)
+    }
+
+    .fintech-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+      flex-wrap: wrap
+    }
+
+    .fintech-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      color: #d9b574;
+      text-transform: uppercase;
+      background: rgba(217, 181, 116, 0.12);
+      border: 1px solid rgba(217, 181, 116, 0.3);
+      padding: 6px 14px;
+      border-radius: 999px
+    }
+
+    .fintech-pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #d9b574;
+      box-shadow: 0 0 10px #d9b574;
+      animation: pulse-glow 2s infinite ease-in-out
+    }
+
+    @keyframes pulse-glow {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.35;
+        transform: scale(0.85);
+      }
+    }
+
+    .fintech-soon-pill {
+      font-size: 12px;
+      font-weight: 600;
+      color: #56cbb9;
+      background: rgba(86, 203, 185, 0.1);
+      border: 1px solid rgba(86, 203, 185, 0.3);
+      padding: 5px 12px;
+      border-radius: 8px
+    }
+
+    .fintech-card h3 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 1.4
+    }
+
+    .fintech-card p {
+      font-size: 14px;
+      color: #b4c4d3;
+      line-height: 1.75;
+      max-width: 850px;
+      margin-bottom: 22px
+    }
+
+    .fintech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px
+    }
+
+    .fintech-tag {
+      font-size: 12.5px;
+      padding: 6px 14px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px dashed rgba(217, 181, 116, 0.35);
+      color: #d2dee9;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: border-color .2s, background .2s, color .2s
+    }
+
+    .fintech-tag:hover {
+      border-color: #d9b574;
+      background: rgba(217, 181, 116, 0.1);
+      color: #fff
+    }
+
+    .fintech-tag .tag-dot {
+      color: #d9b574;
+      font-size: 10px
+    }
+
+    .article-card {
+      position: relative;
+      overflow: hidden;
+      background: #0c1c2ed9;
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform .25s cubic-bezier(.2, .8, .2, 1), border-color .25s, box-shadow .25s
+    }
+
+    .article-card:hover {
+      transform: translateY(-4px);
+      border-color: #65e0cc88;
+      box-shadow: 0 20px 45px #0006
+    }
+
+    .article-tag {
+      margin-bottom: 12px
+    }
+
+    .article-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      line-height: 1.4
+    }
+
+    .article-card p {
+      font-size: 13.5px;
+      color: #b4c4d3;
+      line-height: 1.75;
+      margin-bottom: 18px
+    }
+
+    .social-hub {
+      padding-top: 35px;
+      text-align: center
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 16px
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      background: #133046;
+      border: 1px solid #3b6271;
+      color: #e4eff7;
+      padding: 10px 14px;
+      border-radius: 11px;
+      font-size: 12.5px;
+      font-weight: 700;
+      transition: .2s
+    }
+
+    .social-links a:hover {
+      color: var(--teal);
+      border-color: var(--teal);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px #65e0cc1f
+    }
+
+    .entity-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px
+    }
+
+    .entity-card {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, #0f2236d9, #0a1726e6);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      border-top: 2px solid rgba(217, 181, 116, .55);
+      border-radius: 18px;
+      padding: 26px 28px;
+      transition: border-color .28s, transform .28s
+    }
+
+    .entity-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px)
+    }
+
+    .entity-card .q-num {
+      display: block;
+      font-family: Inter, monospace;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: .12em;
+      margin-bottom: 8px
+    }
+
+    .entity-card h3 {
+      font-size: 18.5px;
+      color: #ffffff;
+      margin: 0 0 10px;
+      line-height: 1.4
+    }
+
+    .entity-card p {
+      font-size: 14.2px;
+      color: #b8c8d8;
+      line-height: 1.85;
+      margin: 0
+    }
+
+    .footercta {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      padding: 10px 0
+    }
+
+    .footercta h2 {
+      margin-bottom: 14px
+    }
+
+    .footercta p {
+      color: #c6dfe3;
+      margin: 0;
+      max-width: 630px
+    }
+
+    .glow-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      background: radial-gradient(520px circle at var(--mx, -500px) var(--my, -500px), rgba(101, 224, 204, .13), rgba(120, 188, 255, .06) 35%, transparent 65%);
+      opacity: var(--glow-opacity, 0);
+      transition: opacity .35s ease;
+      z-index: 0
+    }
+
+    .glow-card>* {
+      position: relative;
+      z-index: 1
+    }
+
+    footer {
+      margin-top: 63px;
+      padding: 24px 0 35px;
+      border-top: 1px solid var(--line);
+      color: #93a7bb;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px
+    }
+
+    .tiny-link {
+      color: #bcd8e3
+    }
+
+    @media(max-width:920px) {
+      .project.featured {
+        grid-template-columns: 1fr
+      }
+
+      .project.featured .browser-frame {
+        border-inline-end: none;
+        border-bottom: 1px solid #ffffff14
+      }
+
+      .project.featured .project-viewport {
+        min-height: auto
+      }
+
+      .hero-ledger {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 0
+      }
+
+      .ledger-col:nth-child(3) {
+        padding-inline-start: 0;
+        border-inline-start: none
+      }
+
+      .articles-grid {
+        grid-template-columns: 1fr
+      }
+
+      .tech-grid {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    @media(max-width:850px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        padding-block: 30px 48px
+      }
+
+      .hero-aside {
+        order: -1;
+        justify-content: center
+      }
+
+      .portrait-card {
+        max-width: 250px
+      }
+
+      .specialties,
+      .proof,
+      .articles-grid,
+      .entity-grid {
+        grid-template-columns: 1fr
+      }
+
+      .sectionhead {
+        display: block
+      }
+
+      .intro {
+        margin-top: 12px
+      }
+
+      .bar {
+        flex-wrap: wrap;
+        padding-block: 12px;
+        gap: 10px
+      }
+
+      .lang {
+        order: 2
+      }
+
+      .navigation {
+        order: 3;
+        margin-inline-start: 0;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 14px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+        border-top: 1px solid #ffffff12;
+        padding-top: 10px
+      }
+
+      .navigation::-webkit-scrollbar {
+        display: none
+      }
+
+      .navigation a {
+        white-space: nowrap;
+        font-size: 13px
+      }
+    }
+
+    @media(max-width:650px) {
+      .wrap {
+        width: min(var(--max), calc(100% - 28px))
+      }
+
+      .brand {
+        gap: 10px
+      }
+
+      .mark {
+        width: 40px;
+        height: 40px;
+        font-size: 14px
+      }
+
+      .brand .longname {
+        font-size: 19px
+      }
+
+      .brand small {
+        font-size: 10px
+      }
+
+      .portrait-card {
+        max-width: 220px;
+        padding: 10px
+      }
+
+      .portrait-dossier {
+        padding: 10px 4px 2px;
+        margin-top: 9px
+      }
+
+      .dossier-loc {
+        font-size: 11px
+      }
+
+      .dossier-code {
+        font-size: 10px
+      }
+
+      .hero-name {
+        font-size: clamp(36px, 10vw, 48px)
+      }
+
+      .hero-name-sub {
+        font-size: 15px;
+        margin-bottom: 14px
+      }
+
+      .hero-role {
+        font-size: clamp(20px, 5.8vw, 26px)
+      }
+
+      .lede {
+        font-size: 15px;
+        margin-bottom: 20px
+      }
+
+      .hero-ledger {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px 12px;
+        padding-block: 14px
+      }
+
+      .ledger-col {
+        padding-inline: 10px
+      }
+
+      .ledger-col strong {
+        font-size: 16px
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr
+      }
+
+      .project-body,
+      .project.featured .project-body {
+        padding: 22px 20px
+      }
+
+      .project.featured .project-body h3 {
+        font-size: 21px
+      }
+
+      .lang {
+        padding: 7px 13px;
+        font-size: 12px
+      }
+
+      .footercta {
+        display: block;
+        padding: 0
+      }
+
+      .footercta .actions {
+        margin-top: 20px
+      }
+
+      .actions .btn {
+        flex: 1 1 auto;
+        text-align: center
+      }
+
+      section {
+        padding-block: 50px
+      }
+
+      .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px
+      }
+
+      .fintech-card {
+        padding: 22px 18px
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      .btn,
+      .project,
+      .article-card {
+        transition: none;
+        opacity: 1;
+        transform: none
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://bouon-wajdy.vercel.app/#person",
+        "name": "Bouon Wajdy",
+        "givenName": "Wajdy",
+        "familyName": "Bouon",
+        "alternateName": ["بوعون وجدي", "Wajdy Bouon"],
+        "url": "https://bouon-wajdy.vercel.app/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://bouon-wajdy.vercel.app/images/profile.jpg",
+          "caption": "Bouon Wajdy (بوعون وجدي) — Software Engineer"
+        },
+        "jobTitle": ["Software Engineer", "Full-Stack Developer", "Junior Murex Consultant"],
+        "description": "Software Engineer building modern web applications and AI-driven solutions & working on Murex Platform at the intersection of technology and finance.",
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Sousse, Tunisia",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sousse",
+            "addressCountry": "TN"
+          }
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "KARTESY Consulting"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "EPI - International Multidisciplinary School of Sousse"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "ISIMM - Higher Institute of Mathematics and Computer Science of Monastir"
+          }
+        ],
+        "knowsAbout": [
+          "Software Engineering",
+          "Full-Stack Web Development",
+          "Murex Platform & Capital Markets",
+          "React.js",
+          "Next.js",
+          "Spring Boot",
+          "Prisma",
+          "Database Architecture",
+          "AI & LangChain"
+        ],
+        "sameAs": [
+          "https://github.com/WajdyB",
+          "https://www.linkedin.com/in/bouon-wajdy-216882257/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bouon-wajdy.vercel.app/#website",
+        "url": "https://bouon-wajdy.vercel.app/",
+        "name": "Bouon Wajdy Portfolio",
+        "publisher": { "@id": "https://bouon-wajdy.vercel.app/#person" }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="topbar">
+    <div class="bar wrap">
+      <a class="brand" href="#top" aria-label="Bouon Wajdy — بوعون وجدي">
+        <span class="mark" data-en="BW" data-ar="ب و">BW</span>
+        <span>
+          <span class="longname" data-en="Bouon Wajdy" data-ar="بوعون وجدي">Bouon Wajdy</span>
+          <small data-en="Software Engineer • Junior Murex Consultant"
+            data-ar="مهندس برمجيات • مستشار Murex مبتدئ">Software Engineer • Junior Murex Consultant</small>
+        </span>
+      </a>
+      <button id="lang-toggle" class="lang" type="button" aria-label="Switch to Arabic">العربية</button>
+      <nav class="navigation" aria-label="Main Navigation">
+        <a href="#work" data-en="Projects" data-ar="المشاريع">Projects</a>
+        <a href="#experience" data-en="Expertise" data-ar="الخبرات">Expertise</a>
+        <a href="#credentials" data-en="Journey" data-ar="المسيرة">Journey</a>
+        <a href="#skills" data-en="Tech Stack" data-ar="المهارات التقنية">Tech Stack</a>
+        <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+        <a class="cv-nav-link" href="cv.html" data-en="CV ↗" data-ar="السيرة الذاتية ↗">CV ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div id="top" class="wrap hero">
+      <div>
+        <div class="hero-kicker">
+          <span class="kicker-dot"></span>
+          <span data-en="SOFTWARE ENGINEERING × FINTECH" data-ar="هندسة البرمجيات والتقنية المالية">SOFTWARE ENGINEERING
+            × FINTECH</span>
+        </div>
+        <h1 class="hero-name" data-en="Bouon Wajdy" data-ar="بوعون وجدي">Bouon Wajdy</h1>
+        <div class="hero-name-sub" data-en="Full-Stack Architecture · Intelligent Systems · Capital Markets"
+          data-ar="معمارية الويب المتكاملة · الأنظمة الذكية · أسواق المال">Full-Stack Architecture · Intelligent Systems
+          · Capital Markets</div>
+        <div class="role-editorial">
+          <h2 class="hero-role" data-en="Software Engineer <em>&amp; Junior Murex Consultant.</em>"
+            data-ar="مهندس برمجيات <em>ومستشار Murex مبتدئ.</em>">Software Engineer <em>&amp; Junior Murex
+              Consultant.</em></h2>
+          <p class="role-tagline"
+            data-en="Building modern web applications and AI-driven solutions &amp; working on Murex Platform at the intersection of technology and finance."
+            data-ar="بناء تطبيقات الويب الحديثة والحلول المدعومة بالذكاء الاصطناعي، والعمل على منصة Murex عند تقاطع التقنية والمالية.">
+            Building modern web
+            applications and AI-driven solutions &amp; working on Murex Platform at the intersection of technology and
+            finance.</p>
+        </div>
+        <p class="lede"
+          data-en="I'm Bouon Wajdy, a Software Engineer graduated from EPI Digital School in Sousse. My experience spans full-stack development, database design, and intelligent systems, currently expanding my knowledge in financial markets as a Murex consultant at KARTESY Consulting."
+          data-ar="أنا بوعون وجدي، مهندس برمجيات متخرج من المدرسة الرقمية EPI بسوسة. تشمل خبرتي تطوير الويب المتكامل وتصميم قواعد البيانات وبناء الأنظمة الذكية، وأعمل حالياً في استكشاف الأسواق المالية كمستشار Murex لدى شركة KARTESY Consulting.">
+          I'm Bouon Wajdy, a Software Engineer graduated from EPI Digital School in Sousse. My experience spans
+          full-stack development, database design, and intelligent systems, currently expanding my knowledge in
+          financial markets as a Murex consultant at KARTESY Consulting.</p>
+        <div class="hero-ledger" aria-label="Professional highlights">
+          <div class="ledger-col">
+            <strong><span>Problem</span> Solving</strong>
+            <small data-en="Analytical Mindset & Algorithmic Focus" data-ar="حل المشكلات والتفكير التحليلي">Analytical
+              Mindset & Algorithmic Focus</small>
+          </div>
+          <div class="ledger-col">
+            <strong><span>Team</span> Leadership</strong>
+            <small data-en="Collaborative Drive & Community Mentorship"
+              data-ar="القيادة وتحفيز العمل الجماعي">Collaborative
+              Drive & Community Mentorship</small>
+          </div>
+          <div class="ledger-col">
+            <strong><span>Agile</span> Adaptability</strong>
+            <small data-en="Rapid Learning across Tech & Finance" data-ar="التكيف السريع بين التقنية والمالية">Rapid
+              Learning across Tech & Finance</small>
+          </div>
+          <div class="ledger-col">
+            <strong><span>Clear</span> Communication</strong>
+            <small data-en="Bridging Complex Tech & Business Value"
+              data-ar="التواصل الفعّال والربط مع أهداف الأعمال">Bridging
+              Complex Tech & Business Value</small>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="#work" data-en="Explore Projects ↗" data-ar="استعراض المشاريع ↗">Explore Projects
+            ↗</a>
+          <a class="btn secondary" href="https://github.com/WajdyB" target="_blank" rel="noopener noreferrer"
+            data-en="GitHub Profile ↗" data-ar="ملف GitHub ↗">GitHub Profile ↗</a>
+          <a class="btn secondary" href="#contact" data-en="Get in Touch ↗" data-ar="تواصل معي ↗">Get in Touch ↗</a>
+        </div>
+      </div>
+      <aside class="hero-aside" aria-label="Bouon Wajdy Portrait / Avatar">
+        <div class="portrait-card glow-card">
+          <div class="portrait-photo-wrap">
+            <img class="portrait-img" src="images/profile.jpg"
+              alt="Bouon Wajdy — بوعون وجدي — Software Engineer & Junior Murex Consultant"
+              title="Bouon Wajdy | بوعون وجدي" width="768" height="825" fetchpriority="high">
+          </div>
+          <div class="portrait-dossier">
+            <span class="dossier-loc"><i></i><span data-en="Sousse, Tunisia" data-ar="سوسة، تونس">Sousse,
+                Tunisia</span></span>
+            <span class="dossier-code" dir="ltr">TECH × FINTECH</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Core Pillars / Specialties -->
+    <section id="experience" class="subtle">
+      <div class="wrap">
+        <div class="sectionhead">
+          <div>
+            <div class="eyebrow" data-en="Core Pillars" data-ar="ركائز الخبرة">Core Pillars</div>
+            <h2 data-en="Software craftsmanship, systems & FinTech" data-ar="هندسة البرمجيات والأنظمة والتقنية المالية">
+              Software craftsmanship, systems & FinTech</h2>
+          </div>
+          <p class="intro"
+            data-en="Combining solid academic foundations, extensive hands-on web architecture, and emerging FinTech systems."
+            data-ar="الجمع بين الأسس الأكاديمية القوية وهندسة تطبيقات الويب الحديثة وحلول التقنية المالية المتقدمة.">
+            Combining solid academic foundations, extensive hands-on web architecture, and emerging FinTech systems.</p>
+        </div>
+        <div class="specialties">
+          <article class="tile">
+            <span class="num">01 / FULL-STACK ARCHITECTURE</span>
+            <h3 data-en="Full-Stack Web Development" data-ar="تطوير تطبيقات الويب المتكاملة">Full-Stack Web Development
+            </h3>
+            <p data-en="Building resilient client-facing and administrative applications with Next.js, React, Spring Boot, NestJS, Tailwind CSS, Prisma, and robust SQL/NoSQL databases."
+              data-ar="بناء تطبيقات موثوقة ومتقدمة باستخدام Next.js و React و Spring Boot و NestJS و Tailwind CSS و Prisma، مع تصميم متين لقواعد البيانات.">
+              Building resilient client-facing and administrative applications with Next.js, React, Spring Boot, NestJS,
+              Tailwind CSS, Prisma, and robust SQL/NoSQL databases.</p>
+          </article>
+          <article class="tile">
+            <span class="num">02 / APPLIED AI &amp; INTELLIGENT SYSTEMS</span>
+            <h3 data-en="AI-Driven Solutions &amp; Automation" data-ar="حلول الذكاء الاصطناعي والأتمتة الذكية">AI-Driven
+              Solutions
+              &amp; Automation</h3>
+            <p data-en="Leveraging Large Language Models, AI agents, and modern toolchains (LangChain, Python, LLMs) to build adaptive applications, streamline complex business workflows, and transform unstructured data into actionable intelligence."
+              data-ar="توظيف نماذج اللغات الكبيرة والوكلاء الأذكياء وأدوات التطوير الحديثة (LangChain و Python و LLMs) لبناء تطبيقات متكيفة، وأتمتة مسارات العمل المعقدة، وتحويل البيانات إلى قرارات ذكية.">
+              Leveraging Large Language Models, AI agents, and modern toolchains (LangChain, Python, LLMs) to build
+              adaptive applications, streamline complex business workflows, and transform unstructured data into
+              actionable intelligence.</p>
+          </article>
+          <article class="tile">
+            <span class="num">03 / CAPITAL MARKETS &amp; FINTECH</span>
+            <h3 data-en="Murex &amp; Financial Engineering" data-ar="استشارات Murex والتقنية المالية">Murex &amp;
+              Financial
+              Engineering</h3>
+            <p data-en="Consulting on capital markets, financial products, derivatives, and the Murex ecosystem at KARTESY—bridging business requirements with technical trade workflows."
+              data-ar="العمل على منصات أسواق المال والمنتجات المالية والمشتقات ضمن بيئة Murex لدى KARTESY والربط بين متطلبات الأعمال وتدفقات التداول التقنية.">
+              Consulting on capital markets, financial products, derivatives, and the Murex ecosystem at
+              KARTESY—bridging business requirements with technical trade workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work / Projects -->
+    <section id="work" class="subtle">
+      <div class="wrap">
+        <div class="sectionhead">
+          <div>
+            <div class="eyebrow" data-en="Portfolio Projects" data-ar="أبرز الأعمال والمشاريع">Portfolio Projects</div>
+            <h2 data-en="Web platforms, enterprise systems & tools" data-ar="منصات الويب والأنظمة المؤسسية">Web
+              platforms, enterprise systems & tools</h2>
+          </div>
+          <p class="intro"
+            data-en="Explore 10 selected software projects covering AI-powered HR, full-stack web applications, and community platforms."
+            data-ar="استكشف ١٠ مشاريع برمجية تشمل أنظمة الموارد البشرية بالذكاء الاصطناعي وتطبيقات الويب والمواقع المجتمعية.">
+            Explore 10 selected software projects covering AI-powered HR, full-stack web applications, and community
+            platforms.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button type="button" class="filter" data-filter="all" aria-pressed="true" data-en="All projects (10)"
+            data-ar="جميع المشاريع (١٠)">All projects (10)</button>
+          <button type="button" class="filter" data-filter="fullstack" aria-pressed="false" data-en="Full-Stack Apps"
+            data-ar="تطبيقات Full-Stack">Full-Stack Apps</button>
+          <button type="button" class="filter" data-filter="ai" aria-pressed="false" data-en="AI & FinTech"
+            data-ar="الذكاء الاصطناعي والمالية">AI & FinTech</button>
+          <button type="button" class="filter" data-filter="community" aria-pressed="false" data-en="IEEE & Web"
+            data-ar="مواقع مجتمعية وIEEE">IEEE & Web</button>
+        </div>
+        <div class="project-grid">
+
+          <!-- 1. Featured Project: RHPro -->
+          <article class="project featured" data-cat="ai">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <span class="browser-open">AI</span>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/rhpro.png" alt="RHPro — Intelligent Human Resource Management System" loading="lazy">
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="HR TECH · AI & LLM WORKFLOWS"
+                  data-ar="تقنية الموارد البشرية · ذكاء اصطناعي">HR TECH · AI & LLM WORKFLOWS</span>
+                <span class="featured-badge" data-en="★ Flagship System" data-ar="★ النظام الرئيسي">★ Flagship
+                  System</span>
+              </div>
+              <h3 data-en="RHPro — Intelligent Human Resource Management System"
+                data-ar="RHPro — المنظومة الذكية لإدارة الموارد البشرية">RHPro — Intelligent Human Resource Management
+                System</h3>
+              <p data-en="An intelligent human resource management platform handling attendance tracking, working hour calculation, automated leave request workflows, and smart policy queries powered by LangChain and Groq LLMs."
+                data-ar="منظومة متطورة لإدارة الموارد البشرية تشمل تتبع الحضور وساعات العمل وإدارة طلبات الإجازات والاستفسارات الذكية المدعومة بنماذج اللغة الكبيرة و LangChain.">
+                An intelligent human resource management platform handling attendance tracking, working hour
+                calculation, automated leave request workflows, and smart policy queries powered by LangChain and Groq
+                LLMs.</p>
+              <div class="highlights">
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>Prisma ORM</span>
+                <span>Supabase</span>
+                <span>Python & LangChain</span>
+                <span>Groq LLM</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://github.com/WajdyB" target="_blank"
+                  rel="noopener noreferrer" data-en="GitHub Repository ↗"
+                  data-ar="مستودع GitHub ↗">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. KiddosTradez -->
+          <article class="project" data-cat="fullstack">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <a href="https://github.com/WajdyB/kidossTradezz" target="_blank" rel="noopener noreferrer"
+                  class="browser-open">↗</a>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/kiddostradez.png" alt="KiddosTradez — Toy Exchange Platform" loading="lazy">
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="FULL-STACK · HYBRID APP" data-ar="تطوير متكامل · تطبيق تبادل">FULL-STACK ·
+                  HYBRID APP</span>
+              </div>
+              <h3 data-en="KiddosTradez — Toy Exchange Platform" data-ar="KiddosTradez — منصة تبادل الألعاب">
+                KiddosTradez — Toy Exchange Platform</h3>
+              <p data-en="A hybrid web application that empowers users to exchange toys, publish item listings, discover available trades, and manage personal profiles securely."
+                data-ar="تطبيق يتيح للمستخدمين تبادل الألعاب، ونشر الإعلانات، وتصفح الألعاب المتاحة، وإدارة الحسابات الشخصية بكل سهولة وأمان.">
+                A hybrid web application that empowers users to exchange toys, publish item listings, discover available
+                trades, and manage personal profiles securely.</p>
+              <div class="highlights">
+                <span>React.js</span>
+                <span>Tailwind CSS</span>
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://github.com/WajdyB/kidossTradezz" target="_blank"
+                  rel="noopener noreferrer" data-en="GitHub Repository ↗" data-ar="المستودع على GitHub ↗">GitHub
+                  Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. JobPortal -->
+          <article class="project" data-cat="fullstack">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <a href="https://github.com/WajdyB/job-portal" target="_blank" rel="noopener noreferrer"
+                  class="browser-open">↗</a>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/jobPortal.png" alt="JobPortal — Job Application Platform" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="CAREER TECH · RECRUITMENT" data-ar="تقنية التوظيف · منصة وظائف">CAREER TECH ·
+                  RECRUITMENT</span>
+              </div>
+              <h3 data-en="JobPortal — Job Application Platform" data-ar="JobPortal — بوابة التوظيف وتقديم الوظائف">
+                JobPortal — Job Application Platform</h3>
+              <p data-en="Comprehensive recruitment platform featuring multi-criteria search, resume uploads, application status tracking, and dedicated admin controls for listings and applicants."
+                data-ar="منصة توظيف متكاملة تتيح البحث المتقدم وتصفية الوظائف ورفع السير الذاتية ومتابعة حالات التقديم ولوحة تحكم للإدارة.">
+                Comprehensive recruitment platform featuring multi-criteria search, resume uploads, application status
+                tracking, and dedicated admin controls for listings and applicants.</p>
+              <div class="highlights">
+                <span>React.js</span>
+                <span>Express.js</span>
+                <span>Tailwind CSS</span>
+                <span>Prisma</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://github.com/WajdyB/job-portal" target="_blank"
+                  rel="noopener noreferrer" data-en="GitHub Repository ↗" data-ar="المستودع على GitHub ↗">GitHub
+                  Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. InvoicePRO -->
+          <article class="project" data-cat="ai">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <a href="https://github.com/WajdyB/invoice-pro" target="_blank" rel="noopener noreferrer"
+                  class="browser-open">↗</a>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/invoicepro.png" alt="InvoicePRO — Smart Invoicing App" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="BUSINESS SOFTWARE · INVOICING" data-ar="برمجيات الأعمال · الفواتير">BUSINESS
+                  SOFTWARE · INVOICING</span>
+              </div>
+              <h3 data-en="InvoicePRO — Smart Invoicing App" data-ar="InvoicePRO — تطبيق إدارة الفواتير">InvoicePRO —
+                Smart Invoicing App</h3>
+              <p data-en="An invoicing application designed for creating and tracking client invoices, maintaining catalog items, generating automated PDF documents, and emailing invoices."
+                data-ar="تطبيق لإدارة الفواتير وإنشائها، ومتابعة سجلات العملاء والبنود، مع توليد فوري لملفات PDF وإرسالها عبر البريد الإلكتروني.">
+                An invoicing application designed for creating and tracking client invoices, maintaining catalog items,
+                generating automated PDF documents, and emailing invoices.</p>
+              <div class="highlights">
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>MongoDB</span>
+                <span>PDF Generation</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://github.com/WajdyB/invoice-pro" target="_blank"
+                  rel="noopener noreferrer" data-en="GitHub Repository ↗" data-ar="المستودع على GitHub ↗">GitHub
+                  Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. CMS-Builder -->
+          <article class="project" data-cat="fullstack">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <a href="https://github.com/WajdyB/builder" target="_blank" rel="noopener noreferrer"
+                  class="browser-open">↗</a>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/builder.png" alt="CMS-Builder — Drag-and-Drop Website Builder" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="CMS · WEB TOOLS" data-ar="نظام إدارة محتوى · أدوات الويب">CMS · WEB
+                  TOOLS</span>
+              </div>
+              <h3 data-en="CMS-Builder — Drag-and-Drop Website Builder" data-ar="CMS-Builder — منشئ المواقع المرئي">
+                CMS-Builder — Drag-and-Drop Website Builder</h3>
+              <p data-en="A content management and site generation system allowing users to build responsive pages visually with reusable components and export static HTML packages."
+                data-ar="نظام إدارة محتوى يتيح إنشاء صفحات ويب تفاعلية عبر واجهة السحب والإفلات وتخصيص المكونات وتصدير مواقع HTML ثابتة.">
+                A content management and site generation system allowing users to build responsive pages visually with
+                reusable components and export static HTML packages.</p>
+              <div class="highlights">
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>MongoDB</span>
+                <span>Drag & Drop UI</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://github.com/WajdyB/builder" target="_blank"
+                  rel="noopener noreferrer" data-en="GitHub Repository ↗" data-ar="المستودع على GitHub ↗">GitHub
+                  Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. EduCore -->
+          <article class="project" data-cat="fullstack">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <a href="https://github.com/WajdyB/course-management" target="_blank" rel="noopener noreferrer"
+                  class="browser-open">↗</a>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/educore.png" alt="EduCore — Course Management System" loading="lazy">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="EDTECH · LMS" data-ar="التقنية التعليمية · إدارة الدورات">EDTECH · LMS</span>
+              </div>
+              <h3 data-en="EduCore — Course Management System" data-ar="EduCore — منصة إدارة الدورات التعليمية">EduCore
+                — Course Management System</h3>
+              <p data-en="An educational portal supporting course authoring, student enrollment, teacher-student communication, learning resources, and progress tracking."
+                data-ar="منصة تعليمية متكاملة لإنشاء المقررات الدراسية، تسجيل الطلاب، التواصل بين الأساتذة والطلبة، ومتابعة التقدم التعليمي.">
+                An educational portal supporting course authoring, student enrollment, teacher-student communication,
+                learning resources, and progress tracking.</p>
+              <div class="highlights">
+                <span>Spring Boot</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+                <span>HTML5 & CSS3</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://github.com/WajdyB/course-management" target="_blank"
+                  rel="noopener noreferrer" data-en="GitHub Repository ↗" data-ar="المستودع على GitHub ↗">GitHub
+                  Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. IEEE ISIMM SB CS Chapter -->
+          <article class="project" data-cat="community">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <a href="https://ieee-isimm-cs-website.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="browser-open">↗</a>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/ieee-isimm-cs.png" alt="IEEE ISIMM SB CS Chapter Website" loading="lazy"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="COMMUNITY · IEEE CS" data-ar="مجتمع تقني · فرع IEEE CS">COMMUNITY · IEEE
+                  CS</span>
+              </div>
+              <h3 data-en="IEEE ISIMM SB CS Chapter Website" data-ar="موقع فرع علوم الحاسوب — IEEE ISIMM SB CS">IEEE
+                ISIMM SB CS Chapter Website</h3>
+              <p data-en="Official digital platform for the IEEE Computer Society Chapter at ISIMM, presenting academic workshops, coding bootcamps, and executive board members."
+                data-ar="الموقع الرسمي لفرع علوم الحاسوب في فرع طلاب IEEE بـ ISIMM، لعرض الأنشطة البرمجية وورش العمل وهيئة الفرع.">
+                Official digital platform for the IEEE Computer Society Chapter at ISIMM, presenting academic workshops,
+                coding bootcamps, and executive board members.</p>
+              <div class="highlights">
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>MongoDB</span>
+                <span>Vercel Deploy</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://ieee-isimm-cs-website.vercel.app/" target="_blank"
+                  rel="noopener noreferrer" data-en="Live Website ↗" data-ar="الموقع الحي ↗">Live Website ↗</a>
+                <a href="https://github.com/WajdyB/ieee-isimm-cs-website" target="_blank" rel="noopener noreferrer"
+                  data-en="GitHub ↗" data-ar="المستودع ↗">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. IEEE ISIMM SB WIE -->
+          <article class="project" data-cat="community">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <a href="https://ieee-isimm-wie-website.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="browser-open">↗</a>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/ieee-isimm-wie.png" alt="IEEE ISIMM SB WIE Affinity Group Website" loading="lazy"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="COMMUNITY · IEEE WIE" data-ar="مجتمع تقني · فرع IEEE WIE">COMMUNITY · IEEE
+                  WIE</span>
+              </div>
+              <h3 data-en="IEEE ISIMM SB WIE Affinity Group Website"
+                data-ar="موقع مجموعة مهندسات المستقبل — IEEE ISIMM WIE">IEEE ISIMM SB WIE Affinity Group Website</h3>
+              <p data-en="A dedicated web presence showcasing activities, leadership panels, and STEM initiatives led by the Women in Engineering Affinity Group at ISIMM."
+                data-ar="المنصة الرسمية لمجموعة مهندسات IEEE بـ ISIMM لعرض المؤتمرات والمبادرات ودعم القيادات النسائية في الهندسة والتقنية.">
+                A dedicated web presence showcasing activities, leadership panels, and STEM initiatives led by the Women
+                in Engineering Affinity Group at ISIMM.</p>
+              <div class="highlights">
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://ieee-isimm-wie-website.vercel.app/" target="_blank"
+                  rel="noopener noreferrer" data-en="Live Website ↗" data-ar="الموقع الحي ↗">Live Website ↗</a>
+                <a href="https://github.com/WajdyB/ieee-isimm-wie-website" target="_blank" rel="noopener noreferrer"
+                  data-en="GitHub ↗" data-ar="المستودع ↗">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. IEEE ISIMM SB SIGHT -->
+          <article class="project" data-cat="community">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <a href="https://ieee-isimm-sight-website.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="browser-open">↗</a>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/ieee-isimm-sight.png" alt="IEEE ISIMM SB SIGHT Group Website" loading="lazy"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="HUMANITARIAN TECH · IEEE SIGHT"
+                  data-ar="التقنية الإنسانية · IEEE SIGHT">HUMANITARIAN TECH · IEEE SIGHT</span>
+              </div>
+              <h3 data-en="IEEE ISIMM SB SIGHT Group Website" data-ar="موقع مجموعة التقنيات الإنسانية — IEEE SIGHT">IEEE
+                ISIMM SB SIGHT Group Website</h3>
+              <p data-en="Website presenting the humanitarian technology initiatives, social impact projects, and members of the IEEE ISIMM Student Branch SIGHT Group."
+                data-ar="موقع لمجموعة التكنولوجيا ذات التأثير الإنساني والاجتماعي IEEE SIGHT بـ ISIMM لعرض المشاريع الميدانية والمبادرات المجتمعية.">
+                Website presenting the humanitarian technology initiatives, social impact projects, and members of the
+                IEEE ISIMM Student Branch SIGHT Group.</p>
+              <div class="highlights">
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://ieee-isimm-sight-website.vercel.app/" target="_blank"
+                  rel="noopener noreferrer" data-en="Live Website ↗" data-ar="الموقع الحي ↗">Live Website ↗</a>
+                <a href="https://github.com/WajdyB/ieee-isimm-sight-website" target="_blank" rel="noopener noreferrer"
+                  data-en="GitHub ↗" data-ar="المستودع ↗">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. IEEE ISIMM Student Branch Main -->
+          <article class="project" data-cat="community">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <a href="https://ieee-isimm-sb-website.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="browser-open">↗</a>
+              </div>
+              <div class="project-viewport">
+                <img class="project-shot" src="images/projects/ieee-isimm-sb.png" alt="IEEE ISIMM Student Branch Main Portal" loading="lazy"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="tag" data-en="FLAGSHIP PORTAL · IEEE ISIMM"
+                  data-ar="البوابة الرئيسية · فرع طلاب IEEE">FLAGSHIP PORTAL · IEEE ISIMM</span>
+              </div>
+              <h3 data-en="IEEE ISIMM Student Branch Main Portal" data-ar="الموقع الرئيسي لفرع طلاب — IEEE ISIMM SB">
+                IEEE ISIMM Student Branch Main Portal</h3>
+              <p data-en="The overarching portal for IEEE ISIMM Student Branch, orchestrating activities across chapters, national hackathons, technical congresses, and executive leadership."
+                data-ar="البوابة المركزية لفرع طلاب IEEE بالمعهد العالي للإعلامية والرياضيات بالمنستير لتنسيق الأنشطة والمؤتمرات والمسابقات.">
+                The overarching portal for IEEE ISIMM Student Branch, orchestrating activities across chapters, national
+                hackathons, technical congresses, and executive leadership.</p>
+              <div class="highlights">
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="links">
+                <a class="primary-link" href="https://ieee-isimm-sb-website.vercel.app/" target="_blank"
+                  rel="noopener noreferrer" data-en="Live Website ↗" data-ar="الموقع الحي ↗">Live Website ↗</a>
+                <a href="https://github.com/WajdyB/ieee-isimm-sb-website" target="_blank" rel="noopener noreferrer"
+                  data-en="GitHub ↗" data-ar="المستودع ↗">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="credentials" class="subtle">
+      <div class="wrap">
+        <div class="sectionhead">
+          <div>
+            <div class="eyebrow" data-en="Experience & Education" data-ar="المسيرة المهنية والتعليم">Experience &
+              Education</div>
+            <h2 data-en="Professional journey & engineering degrees" data-ar="المسار المهني والتكوين الأكاديمي">
+              Professional journey & engineering degrees</h2>
+          </div>
+          <p class="intro"
+            data-en="Track record in software development, financial market solutions at KARTESY, and high-distinction engineering studies."
+            data-ar="سجل حافل في تطوير البرمجيات وحلول الأسواق المالية مع دراسات هندسية بتقدير ممتاز.">Track record in
+            software development, financial market solutions at KARTESY, and high-distinction engineering studies.</p>
+        </div>
+        <div class="proof">
+          <div class="proofbox">
+            <h3 data-en="Work Experience" data-ar="الخبرة المهنية">Work Experience</h3>
+            <div class="timeline">
+              <div class="t-item">
+                <div class="t-head">
+                  <strong data-en="Junior Murex Consultant" data-ar="مستشار Murex مبتدئ">Junior Murex
+                    Consultant</strong>
+                  <span data-en="October 2026 – Present" data-ar="أكتوبر ٢٠٢٦ – حتى الآن">October 2026 – Present</span>
+                </div>
+                <div class="t-org" data-en="KARTESY Consulting · Full Time"
+                  data-ar="شركة KARTESY للاستشارات · دوام كامل">KARTESY Consulting · Full Time
+                </div>
+                <div class="t-desc"
+                  data-en="Developing functional and technical expertise in capital markets, financial derivatives, and enterprise trade workflows within the Murex ecosystem at the intersection of finance and software engineering."
+                  data-ar="بناء وتطوير الخبرة التقنية والوظيفية في الأسواق المالية والمشتقات وأنظمة التداول ضمن بيئة Murex عند تقاطع المالية والبرمجيات.">
+                  Developing functional and technical expertise in capital markets, financial derivatives, and
+                  enterprise trade workflows within the Murex ecosystem at the intersection of finance and software
+                  engineering.</div>
+              </div>
+              <div class="t-item">
+                <div class="t-head">
+                  <strong data-en="Engineering Degree End of Studies Internship"
+                    data-ar="متدرب هندسة برمجيات — مشروع تخرج الهندسة">Engineering Degree End of Studies
+                    Internship</strong>
+                  <span data-en="February 2026 – July 2026" data-ar="فبراير ٢٠٢٦ – يوليو ٢٠٢٦">February 2026 – July
+                    2026</span>
+                </div>
+                <div class="t-org" data-en="MAFRAH IT · Full Time" data-ar="شركة MAFRAH IT · دوام كامل">MAFRAH IT · Full
+                  Time</div>
+                <div class="t-desc"
+                  data-en="Designed and implemented full-stack attendance and HR workflows with robust role-based access control (RBAC), database modeling, and scalable APIs using Next.js, NestJS, and PostgreSQL/Supabase."
+                  data-ar="تصميم وتطوير منظومة لتتبع الحضور وإدارة الموارد البشرية مع تحكم متقدم في الصلاحيات وقواعد البيانات باستخدام Next.js و NestJS و PostgreSQL/Supabase.">
+                  Designed and implemented full-stack attendance and HR workflows with robust role-based access control
+                  (RBAC), database modeling, and scalable APIs using Next.js, NestJS, and PostgreSQL/Supabase.</div>
+              </div>
+              <div class="t-item">
+                <div class="t-head">
+                  <strong data-en="Summer Internship" data-ar="متدرب صيفي">Summer Internship</strong>
+                  <span data-en="June 2025 – August 2025" data-ar="يونيو ٢٠٢٥ – أغسطس ٢٠٢٥">June 2025 – August
+                    2025</span>
+                </div>
+                <div class="t-org" data-en="Mobelite LABS · Full Time" data-ar="مختبرات Mobelite LABS · دوام كامل">
+                  Mobelite LABS · Full Time</div>
+                <div class="t-desc"
+                  data-en="Hands-on software development internship contributing to modern web engineering practices, component architecture, and team sprint cycles."
+                  data-ar="تدريب صيفي في تطوير البرمجيات بمختبرات Mobelite LABS والمساهمة في بناء مكونات الويب الحديثة والعمل الجماعي الرشيق.">
+                  Hands-on software development internship contributing to modern web engineering practices, component
+                  architecture, and team sprint cycles.</div>
+              </div>
+              <div class="t-item">
+                <div class="t-head">
+                  <strong data-en="Bachelor's Degree End of Studies Internship"
+                    data-ar="متدرب إعلامية — مشروع تخرج الإجازة">Bachelor's Degree End of Studies Internship</strong>
+                  <span data-en="January 2023 – July 2023" data-ar="يناير ٢٠٢٣ – يوليو ٢٠٢٣">January 2023 – July
+                    2023</span>
+                </div>
+                <div class="t-org" data-en="Mobelite LABS · Full Time" data-ar="مختبرات Mobelite LABS · دوام كامل">
+                  Mobelite LABS · Full Time</div>
+                <div class="t-desc"
+                  data-en="End-of-studies graduation internship focused on full-stack web solutions, API integration, and database design for client projects."
+                  data-ar="تدريب مشروع تخرج الإجازة المتمحور حول حلول الويب المتكاملة وربط واجهات البرمجة وتصميم قواعد البيانات.">
+                  End-of-studies graduation internship focused on full-stack web solutions, API integration, and
+                  database
+                  design for client projects.</div>
+              </div>
+            </div>
+          </div>
+          <div class="proofbox">
+            <h3 data-en="Education" data-ar="المسار الأكاديمي والتعليم">Education</h3>
+            <ul>
+              <li>
+                <strong data-en="Engineering Degree in Software Development"
+                  data-ar="الشهادة الوطنية لمهندس في تطوير البرمجيات">Engineering Degree in Software
+                  Development</strong><br>
+                <span
+                  data-en="EPI - International Multidisciplinary School of Sousse, Tunisia (September 2023 – July 2026)"
+                  data-ar="المدرسة الدولية متعددة التقنيات بسوسة (EPI)، تونس (سبتمبر ٢٠٢٣ – يوليو ٢٠٢٦)">EPI -
+                  International Multidisciplinary School of Sousse, Tunisia
+                  (September 2023 – July 2026)</span>
+              </li>
+              <li>
+                <strong data-en="Bachelor Degree in Computer Science" data-ar="الإجازة في علوم الإعلامية">Bachelor
+                  Degree in Computer Science</strong><br>
+                <span
+                  data-en="ISIMM - Higher Institute of Mathematics and Computer Science of Monastir, Tunisia (September 2020 – July 2023)"
+                  data-ar="المعهد العالي للإعلامية والرياضيات بالمنستير (ISIMM)، تونس (سبتمبر ٢٠٢٠ – يوليو ٢٠٢٣)">ISIMM
+                  - Higher Institute of Mathematics and Computer Science of Monastir, Tunisia (September 2020 – July
+                  2023)</span>
+              </li>
+            </ul>
+            <div class="note"
+              data-en="Passionate about bridging cutting-edge web technologies, algorithmic problem solving, and modern financial applications."
+              data-ar="شغوف بالربط بين أحدث تقنيات الويب والحلول البرمجية الخوارزمية وتطبيقات التكنولوجيا المالية.">
+              Passionate about bridging cutting-edge web technologies, algorithmic problem solving, and modern financial
+              applications.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack & Tools (Software Engineering, AI & FinTech) -->
+    <section id="skills" class="subtle">
+      <div class="wrap">
+        <div class="sectionhead">
+          <div>
+            <div class="eyebrow" data-en="Technical Arsenal & Tooling" data-ar="الترسانة التقنية والمهارات">Technical
+              Arsenal & Tooling</div>
+            <h2 data-en="Tech Stack & Core Technologies" data-ar="التقنيات والأدوات البرمجية">Tech Stack & Core
+              Technologies</h2>
+          </div>
+          <p class="intro"
+            data-en="A comprehensive collection of full-stack development technologies, databases, and modern engineering tools I work with, alongside continuous consulting expansion in financial markets."
+            data-ar="مجموعة التقنيات وقواعد البيانات وأدوات التطوير الحديثة التي أعمل بها في هندسة البرمجيات، إلى جانب مسار التعلّم والتطوير المستمر في منصات أسواق المال.">
+            A
+            comprehensive collection of full-stack development technologies, databases, and modern engineering tools I
+            work with, alongside continuous consulting expansion in financial markets.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/html.png" alt="HTML" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">HTML</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/css.png" alt="CSS" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">CSS</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/javascript.png" alt="JavaScript" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">JavaScript</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/reactjs.png" alt="React.js" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">React.js</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/tailwind.png" alt="Tailwind" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">Tailwind</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/bootstrap.png" alt="Bootstrap" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">Bootstrap</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/typescript.png" alt="TypeScript" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">TypeScript</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/nodejs.png" alt="Node.js" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">Node.js</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/express_white.png" alt="Express.js" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">Express.js</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/nextjs.png" alt="Next.js" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">Next.js</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/mongodb.png" alt="MongoDB" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">MongoDB</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/mysql.png" alt="MySQL" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">MySQL</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/postgre.webp" alt="PostgreSQL" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">PostgreSQL</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/github.png" alt="GitHub" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">Github</span>
+          </div>
+
+          <div class="tech-card glow-card">
+            <div class="tech-icon-wrap">
+              <img src="images/technologies/git.png" alt="Git" width="36" height="36" loading="lazy">
+            </div>
+            <span class="tech-name">Git</span>
+          </div>
+        </div>
+
+        <!-- FinTech & Murex Platform Stack (Learning Phase) -->
+        <div class="fintech-card glow-card">
+          <div class="fintech-header">
+            <div class="fintech-status">
+              <span class="fintech-pulse" aria-hidden="true"></span>
+              <span data-en="Active Learning Phase · FinTech & Capital Markets"
+                data-ar="مرحلة تعلّم نشطة · التقنية المالية وأسواق المال">Active Learning Phase · FinTech & Capital
+                Markets</span>
+            </div>
+            <span class="fintech-soon-pill" data-en="Displaying Soon ⏳" data-ar="ستُعرض قريباً ⏳">Displaying Soon
+              ⏳</span>
+          </div>
+
+          <h3 data-en="Capital Markets Systems, Trading Workflows & Murex Platform"
+            data-ar="أنظمة أسواق المال، مسارات التداول ومنصة Murex">Capital Markets Systems, Trading Workflows & Murex
+            Platform</h3>
+
+          <p data-en="Currently undergoing specialized professional training and consulting onboarding at KARTESY Consulting, mastering financial instruments, trade lifecycles, and the Murex (MX.3) enterprise platform. Dedicated financial tools, architectures, and integration modules will be showcased here soon upon completing the learning milestones."
+            data-ar="أخوض حالياً مرحلة تدريب استشاري وتأهيل مهني في KARTESY Consulting للتعمق في الأدوات المالية ودورات حياة الصفقات ومنصة Murex (MX.3). سيتم عرض الأدوات والحلول والوحدات التقنية المالية فور إتمام هذه المرحلة التعليمية قريباً.">
+            Currently undergoing specialized professional training and consulting onboarding at KARTESY Consulting,
+            mastering financial instruments, trade lifecycles, and the Murex (MX.3) enterprise platform. Dedicated
+            financial tools, architectures, and integration modules will be showcased here soon upon completing the
+            learning milestones.
+          </p>
+
+          <div class="fintech-tags" aria-label="FinTech and Murex Focus Areas">
+            <span class="fintech-tag"><span class="tag-dot">✦</span> Murex MX.3</span>
+            <span class="fintech-tag"><span class="tag-dot">✦</span> Trade Lifecycle</span>
+            <span class="fintech-tag"><span class="tag-dot">✦</span> Financial Derivatives</span>
+            <span class="fintech-tag"><span class="tag-dot">✦</span> Capital Markets Architecture</span>
+            <span class="fintech-tag"><span class="tag-dot">✦</span> Risk Management Workflows</span>
+            <span class="fintech-tag"><span class="tag-dot">✦</span> Financial Data Feeds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact & Social -->
+    <section id="contact" class="wrap subtle">
+      <div class="footercta">
+        <div>
+          <div class="eyebrow" data-en="Connect & Inquiries" data-ar="التواصل والتعاون">Connect & Inquiries</div>
+          <h2 data-en="Let's build something remarkable." data-ar="دعنا نتعاون في بناء حلول متميزة.">Let's build
+            something remarkable.</h2>
+          <p data-en="Whether you have an inquiry about software engineering, FinTech collaboration, or full-stack projects, feel free to reach out directly."
+            data-ar="سواء كان لديك استفسار أو فرصة تعاون في هندسة البرمجيات أو المشاريع المالية والتقنية، يسعدني تواصلك المباشر.">
+            Whether you have an inquiry about software engineering, FinTech collaboration, or full-stack projects, feel
+            free to reach out directly.</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="mailto:bouonwajdy@gmail.com" data-en="Email Me ↗"
+            data-ar="راسلني بالبريد ↗">Email Me ↗</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/bouon-wajdy-216882257/" target="_blank"
+            rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="btn secondary" href="https://github.com/WajdyB" target="_blank" rel="noopener noreferrer">GitHub
+            ↗</a>
+        </div>
+      </div>
+      <div class="social-hub" aria-label="Work Email">
+        <div class="eyebrow" data-en="Work Email" data-ar="البريد الإلكتروني للعمل">Work Email</div>
+        <div class="social-links">
+          <a href="mailto:bouonwajdy@gmail.com">✉ bouonwajdy@gmail.com</a>
+        </div>
+      </div>
+      <footer>
+        <span>© 2026 Bouon Wajdy · بوعون وجدي</span>
+        <span>
+          <a class="tiny-link" href="https://www.linkedin.com/in/bouon-wajdy-216882257/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a> ·
+          <a class="tiny-link" href="https://github.com/WajdyB" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+          <a class="tiny-link" href="#top">Back to top ↑</a>
+        </span>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('lang-toggle');
+      var nav = document.querySelector('nav');
+      function setLanguage(lang) {
+        var ar = lang === 'ar';
+        document.documentElement.lang = lang;
+        document.documentElement.dir = ar ? 'rtl' : 'ltr';
+        document.title = ar
+          ? 'بوعون وجدي | مهندس برمجيات ومستشار Murex مبتدئ — Bouon Wajdy'
+          : 'Bouon Wajdy | Software Engineer & Junior Murex Consultant — بوعون وجدي';
+
+        document.querySelectorAll('[data-en][data-ar]').forEach(function (element) {
+          var value = element.getAttribute(ar ? 'data-ar' : 'data-en');
+          if (element.classList.contains('hero-role')) {
+            element.innerHTML = value;
+          } else {
+            element.textContent = value;
+          }
+        });
+
+        toggle.textContent = ar ? 'English' : 'العربية';
+        toggle.setAttribute('aria-label', ar ? 'Switch to English' : 'التبديل إلى العربية');
+        nav.setAttribute('aria-label', ar ? 'القائمة الرئيسية' : 'Main navigation');
+
+        try { localStorage.setItem('bouon_portfolio_lang', lang); } catch (e) { }
+      }
+
+      toggle.addEventListener('click', function () {
+        setLanguage(document.documentElement.lang === 'ar' ? 'en' : 'ar');
+      });
+
+      var stored = 'en';
+      try { stored = localStorage.getItem('bouon_portfolio_lang') || 'en'; } catch (e) { }
+      setLanguage(stored);
+
+      /* Filter Handler */
+      document.querySelectorAll('.filter').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var chosen = button.getAttribute('data-filter');
+          document.querySelectorAll('.filter').forEach(function (b) { b.setAttribute('aria-pressed', String(b === button)); });
+          document.querySelectorAll('.project').forEach(function (card) {
+            card.hidden = chosen !== 'all' && card.getAttribute('data-cat') !== chosen;
+          });
+        });
+      });
+
+      /* Interactive Card Cursor Spotlight & Hero 3D Tilt */
+      var glowCards = document.querySelectorAll('.project, .tile, .proofbox, .article-card, .portrait-card, .tech-card, .fintech-card');
+      glowCards.forEach(function (card) { card.classList.add('glow-card'); });
+      var heroGraphic = document.querySelector('.portrait-card');
+
+      window.addEventListener('pointermove', function (e) {
+        var cx = e.clientX, cy = e.clientY;
+        glowCards.forEach(function (card) {
+          var r = card.getBoundingClientRect();
+          if (cy < r.bottom + 140 && cy > r.top - 140 && cx < r.right + 140 && cx > r.left - 140) {
+            card.style.setProperty('--mx', (cx - r.left) + 'px');
+            card.style.setProperty('--my', (cy - r.top) + 'px');
+            card.style.setProperty('--glow-opacity', '1');
+          } else {
+            card.style.setProperty('--glow-opacity', '0');
+          }
+        });
+
+        if (heroGraphic && window.innerWidth > 850) {
+          var gr = heroGraphic.getBoundingClientRect();
+          if (cx >= gr.left && cx <= gr.right && cy >= gr.top && cy <= gr.bottom) {
+            var nx = ((cx - gr.left) / gr.width - 0.5) * 2;
+            var ny = ((cy - gr.top) / gr.height - 0.5) * 2;
+            heroGraphic.style.transform = 'rotateY(' + (nx * 3.2).toFixed(2) + 'deg) rotateX(' + (-ny * 3.2).toFixed(2) + 'deg)';
+          } else {
+            heroGraphic.style.transform = '';
+          }
+        }
+      }, { passive: true });
+
+      /* Background Canvas Network / Constellation */
+      var canvas = document.getElementById('bg-canvas');
+      if (canvas && canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var w = 0, h = 0, dpr = 1;
+        var mouse = {
+          tx: window.innerWidth * 0.5,
+          ty: window.innerHeight * 0.35,
+          x: window.innerWidth * 0.5,
+          y: window.innerHeight * 0.35,
+          sx: window.innerWidth * 0.5,
+          sy: window.innerHeight * 0.35,
+          vx: 0,
+          vy: 0,
+          active: false
+        };
+        var nodes = [];
+        var ripples = [];
+
+        function initNodes() {
+          nodes = [];
+          var count = window.innerWidth < 650 ? 28 : 50;
+          var palette = [
+            { r: 101, g: 224, b: 204 },
+            { r: 120, g: 188, b: 255 },
+            { r: 239, g: 196, b: 120 }
+          ];
+          for (var i = 0; i < count; i++) {
+            var c = palette[i % palette.length];
+            var z = 0.45 + Math.random() * 0.95;
+            nodes.push({
+              x: Math.random() * w,
+              y: Math.random() * h,
+              vx: (Math.random() - 0.5) * 0.42 * z,
+              vy: (Math.random() - 0.5) * 0.42 * z,
+              r: (1.2 + Math.random() * 1.9) * z,
+              z: z,
+              color: c,
+              phase: Math.random() * Math.PI * 2
+            });
+          }
+        }
+
+        function resize() {
+          dpr = Math.min(window.devicePixelRatio || 1, 2);
+          w = window.innerWidth;
+          h = window.innerHeight;
+          canvas.width = w * dpr;
+          canvas.height = h * dpr;
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          initNodes();
+        }
+        resize();
+        window.addEventListener('resize', resize, { passive: true });
+
+        window.addEventListener('pointermove', function (e) {
+          mouse.vx = e.clientX - mouse.tx;
+          mouse.vy = e.clientY - mouse.ty;
+          mouse.tx = e.clientX;
+          mouse.ty = e.clientY;
+          mouse.active = true;
+        }, { passive: true });
+
+        window.addEventListener('pointerdown', function (e) {
+          ripples.push({ x: e.clientX, y: e.clientY, r: 6, maxR: 220, alpha: 0.48 });
+        }, { passive: true });
+
+        var tick = 0;
+        function render() {
+          tick += 0.014;
+          ctx.clearRect(0, 0, w, h);
+
+          if (!mouse.active) {
+            mouse.tx = w * (0.5 + Math.cos(tick * 0.55) * 0.24);
+            mouse.ty = h * (0.38 + Math.sin(tick * 0.42) * 0.18);
+          }
+
+          mouse.x += (mouse.tx - mouse.x) * 0.095;
+          mouse.y += (mouse.ty - mouse.y) * 0.095;
+          mouse.sx += (mouse.tx - mouse.sx) * 0.036;
+          mouse.sy += (mouse.ty - mouse.sy) * 0.036;
+
+          var g2 = ctx.createRadialGradient(mouse.sx, mouse.sy, 10, mouse.sx, mouse.sy, Math.max(w, h) * 0.46);
+          g2.addColorStop(0, 'rgba(239, 196, 120, 0.06)');
+          g2.addColorStop(0.45, 'rgba(120, 188, 255, 0.055)');
+          g2.addColorStop(1, 'rgba(8, 18, 33, 0)');
+          ctx.fillStyle = g2;
+          ctx.fillRect(0, 0, w, h);
+
+          var g1 = ctx.createRadialGradient(mouse.x, mouse.y, 4, mouse.x, mouse.y, 420);
+          g1.addColorStop(0, 'rgba(101, 224, 204, 0.145)');
+          g1.addColorStop(0.4, 'rgba(120, 188, 255, 0.065)');
+          g1.addColorStop(1, 'rgba(8, 18, 33, 0)');
+          ctx.fillStyle = g1;
+          ctx.fillRect(0, 0, w, h);
+
+          var step = w < 650 ? 52 : 44;
+          var lensR = 260;
+          var lensR2 = lensR * lensR;
+          for (var gx = step * 0.5; gx < w; gx += step) {
+            for (var gy = step * 0.5; gy < h; gy += step) {
+              var dx = gx - mouse.x;
+              var dy = gy - mouse.y;
+              var d2 = dx * dx + dy * dy;
+              if (d2 < lensR2) {
+                var dist = Math.sqrt(d2) || 1;
+                var prox = 1 - dist / lensR;
+                var pull = prox * prox * 11;
+                var px = gx + (dx / dist) * pull;
+                var py = gy + (dy / dist) * pull;
+                ctx.fillStyle = 'rgba(101, 224, 204, ' + (0.07 + prox * 0.34).toFixed(3) + ')';
+                ctx.beginPath();
+                ctx.arc(px, py, 1 + prox * 1.35, 0, Math.PI * 2);
+                ctx.fill();
+              } else {
+                ctx.fillStyle = 'rgba(175, 189, 205, 0.045)';
+                ctx.fillRect(gx - 0.6, gy - 0.6, 1.2, 1.2);
+              }
+            }
+          }
+
+          var parX = (mouse.x - w * 0.5) * 0.022;
+          var parY = (mouse.y - h * 0.5) * 0.022;
+
+          for (var i = 0; i < nodes.length; i++) {
+            var n = nodes[i];
+            if (!reducedMotion) {
+              n.x += n.vx;
+              n.y += n.vy;
+              var mdx = n.x - mouse.x;
+              var mdy = n.y - mouse.y;
+              var md = Math.sqrt(mdx * mdx + mdy * mdy);
+              if (md < 185 && md > 1) {
+                var force = (1 - md / 185) * 0.38;
+                n.x += (mdx / md) * force + (-mdy / md) * force * 0.35;
+                n.y += (mdy / md) * force + (mdx / md) * force * 0.35;
+              }
+              if (n.x < -30) n.x = w + 30;
+              if (n.x > w + 30) n.x = -30;
+              if (n.y < -30) n.y = h + 30;
+              if (n.y > h + 30) n.y = -30;
+            }
+            n.rx = n.x + parX * n.z;
+            n.ry = n.y + parY * n.z;
+          }
+
+          ctx.lineWidth = 1;
+          for (var a = 0; a < nodes.length; a++) {
+            var na = nodes[a];
+            for (var b = a + 1; b < nodes.length; b++) {
+              var nb = nodes[b];
+              var ldx = na.rx - nb.rx;
+              var ldy = na.ry - nb.ry;
+              var ld2 = ldx * ldx + ldy * ldy;
+              if (ld2 < 21000) {
+                var alpha = (1 - Math.sqrt(ld2) / 145) * 0.16;
+                ctx.strokeStyle = 'rgba(101, 224, 204, ' + alpha.toFixed(3) + ')';
+                ctx.beginPath();
+                ctx.moveTo(na.rx, na.ry);
+                ctx.lineTo(nb.rx, nb.ry);
+                ctx.stroke();
+              }
+            }
+            var cdx = na.rx - mouse.x;
+            var cdy = na.ry - mouse.y;
+            var cd2 = cdx * cdx + cdy * cdy;
+            if (cd2 < 46000) {
+              var calpha = (1 - Math.sqrt(cd2) / 214) * 0.32;
+              ctx.strokeStyle = 'rgba(120, 188, 255, ' + calpha.toFixed(3) + ')';
+              ctx.beginPath();
+              ctx.moveTo(na.rx, na.ry);
+              ctx.lineTo(mouse.x, mouse.y);
+              ctx.stroke();
+            }
+
+            var pulseAlpha = 0.38 + Math.sin(tick * 2 + na.phase) * 0.18;
+            ctx.fillStyle = 'rgba(' + na.color.r + ',' + na.color.g + ',' + na.color.b + ',' + pulseAlpha.toFixed(3) + ')';
+            ctx.beginPath();
+            ctx.arc(na.rx, na.ry, na.r, 0, Math.PI * 2);
+            ctx.fill();
+          }
+
+          for (var r = ripples.length - 1; r >= 0; r--) {
+            var rp = ripples[r];
+            rp.r += 4.2;
+            rp.alpha *= 0.955;
+            ctx.strokeStyle = 'rgba(101, 224, 204, ' + rp.alpha.toFixed(3) + ')';
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.arc(rp.x, rp.y, rp.r, 0, Math.PI * 2);
+            ctx.stroke();
+            if (rp.alpha < 0.015 || rp.r > rp.maxR) ripples.splice(r, 1);
+          }
+
+          if (!reducedMotion) requestAnimationFrame(render);
+        }
+        render();
+      }
+    }());
+  </script>
+</body>
+
+</html>

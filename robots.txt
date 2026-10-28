@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bouon-wajdy.vercel.app/sitemap.xml
